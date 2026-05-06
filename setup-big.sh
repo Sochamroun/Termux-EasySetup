@@ -7,7 +7,7 @@ echo "Starting Termux Setup install software..."
 yes | pkg update && yes | pkg upgrade
 
 # Install packages
-yes | pkg install python ffmpeg git tmux wget unzip iproute2 libqrencode cloudflared fish nodejs net-tools nano -y
+yes | pkg install python ffmpeg git tmux wget unzip iproute2 libqrencode cloudflared fish nodejs net-tools nano deno -y
 yes | pkg install x11-repo -y
 yes | pkg install termux-x11-nightly gimp xfce4 xfce4-terminal xfce4-taskmanager synaptic dbus -y
 yes | pkg install firefox chromium -y 
@@ -136,8 +136,59 @@ xfce4-session
 EOF
 
 chmod +x win.sh
-##
 
+## Movie and Song
+cat > ~/mv.sh << 'EOF'
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Folder
+VIDEO_FOLDER="/storage/emulated/0/Movies"
+AUDIO_FOLDER="/storage/emulated/0/Music"
+
+mkdir -p "$VIDEO_FOLDER"
+mkdir -p "$AUDIO_FOLDER"
+
+clear
+echo "=========================================="
+echo "   🚀 Downloader MV (MP4 & MP3)"
+echo "=========================================="
+
+while true; do
+    echo ""
+    read -p "🔗 URL video (CTRL+C to exit): " url
+
+    if [[ -z "$url" ]]; then
+        echo "⚠️ Please enter a link!"
+        continue
+    fi
+
+    echo "⏳ Downloading..."
+
+    # 🎬 Video MP4
+    yt-dlp \
+        -f "bestvideo[height<=720][ext=mp4][fps<=60]+bestaudio[ext=m4a]/mp4" \
+        --merge-output-format mp4 \
+        -S "vcodec:h264,lang,quality,res,fps,hdr:12,acodec:aac" \
+        -o "$VIDEO_FOLDER/%(title)s.%(ext)s" \
+        "$url" &
+
+    # 🎧 Audio MP3
+    yt-dlp -x \
+        --audio-format mp3 \
+        --audio-quality 256k \
+        --embed-thumbnail \
+        --add-metadata \
+        -o "$AUDIO_FOLDER/%(title)s.%(ext)s" \
+        "$url" &
+
+    echo "✅ Download started in background"
+    echo "   🎬 Video -> $VIDEO_FOLDER"
+    echo "   🎧 Audio -> $AUDIO_FOLDER"
+done
+EOF
+
+chmod +x mv.sh
+## hi
 echo ""
 echo "✅ Setup Complete!"
 echo "--------------------------------"
@@ -145,6 +196,5 @@ echo "Commands (use this to show files)"
 echo "video.sh   → Download videos 🎬"
 echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
-echo "win.sh     → Start XFCE desktop 🖥️"
-echo "ftp.sh     → Start FTP server 📡"
+echo "mv.sh     → Download video and song one time"
 echo "win.sh     → Start XFCE desktop 🖥️"
