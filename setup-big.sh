@@ -2,7 +2,8 @@
 
 echo "Starting Termux Setup install software..."
 
-
+# server connection 
+termux-change-repo
 # Update system
 yes | pkg update && yes | pkg upgrade
 
