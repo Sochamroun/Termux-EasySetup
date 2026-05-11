@@ -1,9 +1,8 @@
-# សួស្តី 🤗
-# Hello everyone 🤔
+# សួស្តី 🤗 សូមស្វាគមន៍មកកាន់ Termux tool Crack 
+# Hello everyone 🤔 Step by step 
 ## 🔗 Download Termux App
 [👉 Open Termux ](https://github.com/termux/termux-app/tags)
-## 🔗 Download Termux x11
-[📺 Download Termux:X11](https://github.com/termux/termux-x11/tags)
+
 ## 🔗 Download Material Files
 [💼 Play Store Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
 # 🚀 Termux All-in-One Setup
@@ -29,10 +28,12 @@ termux-setup-storage
 ```bash
 curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/main/setup-small.sh | bash
 ```
-## file Big setup 🤔
+## file Big setup 🤔 need termux x11
 ```bash
 curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/refs/heads/main/setup-big.sh | bash
 ```
+## 🔗 Download Termux x11
+[📺 Download Termux:X11](https://github.com/termux/termux-x11/tags)
 ## 🤩 copy paste and enter 
 ## setup wait សុំមេត្តារង់ចាំ 🫠
 ## ចំណុចសំខាន់របស់ big setup និង small setup 
