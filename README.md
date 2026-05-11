@@ -15,7 +15,22 @@
 * 🎬 **Video Downloader**: ទាញយកវីដេអូកម្រិត 720p ពី YouTube និងបណ្ដាញសង្គមផ្សេងៗ។
 * 🎵 **Audio Downloader**: បំប្លែងវីដេអូទៅជា MP3 (256k) ដោយស្វ័យប្រវត្តិ។
 * 📡 **FTP Server**: បង្កើត Server ដើម្បីបញ្ជូន File រវាងទូរស័ព្ទ និងកុំព្យូទ័រ។
-
+## Note 
+-`yt-dlp \
+        -f "bestvideo[height<=720][ext=mp4][fps<=60]+bestaudio[ext=m4a]/mp4" \
+        --merge-output-format mp4 \
+        -S "vcodec:h264,lang,quality,res,fps,hdr:12,acodec:aac" \
+        -o "$DOWNLOAD_FOLDER/%(title)s.%(ext)s" \`
+- `height<=720`
+- `144p`
+- `240p`
+- `360p`
+- `480p`
+- `720p (HD)`
+- `1080p (Full HD)`
+- `1440p (2K / QHD)`
+- `2160p (4K / UHD)`
+---
 ## 📥 របៀបដំឡើង (Installation)
 បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅរត់៖
 ---
