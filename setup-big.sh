@@ -14,6 +14,7 @@ yes | pkg install termux-x11-nightly tur-repo gimp xfce4 xfce4-terminal xfce4-ta
 yes | pkg install firefox chromium -y 
 yes | pkg install pulseaudio pavucontrol -y 
 yes | pkg install mesa-demos -y 
+yes | pkg install code-server -y
 
 # Install pip tools
 pip install --upgrade pip
