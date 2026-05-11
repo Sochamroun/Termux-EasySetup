@@ -1,5 +1,5 @@
 # សួស្តី 🤗 សូមស្វាគមន៍មកកាន់ Termux tool Crack 
-# Hello everyone 🤔 Step by step 
+# Hello everyone 🤔
 ## 🔗 Download Termux App
 [👉 Open Termux ](https://github.com/termux/termux-app/tags)
 
