@@ -2,7 +2,7 @@
 ![image alt](https://github.com/Sochamroun/Termux-setup.github.io/blob/aeb8e12f17ac11e545f1475a86fefca17982158a/Icon.png)
 # Hello everyone 🤔
 ## 🔗 Download Termux App
-[👉 Open Termux ](https://github.com/termux/termux-app/tags)
+[👉 Open Termux ](https://github.com/Sochamroun/Termux-setup.github.io/releases/download/App/termux.apk)
 
 ## 🔗 Download Material Files
 [💼 Play Store Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
@@ -11,12 +11,15 @@
  Tool ពិសេសៗក្នុង Termux install ដោយស្វ័យប្រវត្តិ។
 
 ## ✨ លក្ខណៈពិសេស (Features)
-* 📦 **Auto-Update & Install**: ដំឡើង Package សំខាន់ៗ (Python, Git, NodeJS,...)។
+* 📦 **Update & Install**: ដំឡើង Package សំខាន់ៗ (Python, Git, NodeJS,...)។
 * 🐚 **Fish Shell**: កំណត់យក Fish shell ដែលមាន auto-suggestion ងាយស្រួលវាយកូដ។
 * 🎬 **Video Downloader**: ទាញយកវីដេអូកម្រិត 720p ពី YouTube និងបណ្ដាញសង្គមផ្សេងៗ។
 * 🎵 **Audio Downloader**: បំប្លែងវីដេអូទៅជា MP3 (256k) ដោយស្វ័យប្រវត្តិ។
 * 📡 **FTP Server**: បង្កើត Server ដើម្បីបញ្ជូន File រវាងទូរស័ព្ទ និងកុំព្យូទ័រ។
-## Edit this place (កែកន្លែងនេះ) 
+## Edit video.sh this place (កែកន្លែងនេះ)
+```bash
+nano video.sh
+````
 -`yt-dlp \
         -f "bestvideo[height<=720][ext=mp4][fps<=60]+bestaudio[ext=m4a]/mp4" \
         --merge-output-format mp4 \
@@ -35,7 +38,7 @@
 ## 📥 របៀបដំឡើង (Installation) និង Update Vision package 
 បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅរត់៖
 ---
-### Copy cmd ទាំងអស់
+### Copy commands 
 #### allow storage
 ```bash
 termux-setup-storage
@@ -51,7 +54,8 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/ref
 ## 🔗 Download Termux x11
 [📺 Download Termux:X11](https://github.com/termux/termux-x11/tags)
 ## 🤩 copy paste and enter 
-## setup wait សុំមេត្តារង់ចាំ 🫠
+## setup recommend Use Wifi Fast Install 😎
+---
 ## ចំណុចសំខាន់របស់ big setup និង small setup 
 ## big setup
 
@@ -70,6 +74,7 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/ref
 - `song.sh` → Download audio 🎵  
 - `ftp.sh` → Start FTP server 📡  
 - `win.sh` → Start XFCE desktop 🖥️
+---
 ## bugs in termux [Process completed (signal 9)]
 - `crashes on Android 12+ due to FLAG_IMMUTABLE, storage permission issues on newer Android versions, and "Process completed (signal 9)" due to battery optimization killing background processes.`
 ## To fix install 
