@@ -1,13 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 echo "Starting Termux Setup install software..."
-# Server connect 
-termux-change-repo
+
 # update 
 yes | pkg update && yes | pkg upgrade
 
 # Install packages
-yes | pkg install python ffmpeg git tmux wget unzip iproute2 libqrencode cloudflared fish nodejs net-tools nano deno -y
+yes | pkg install python ffmpeg git tmux wget unzip iproute2 libqrencode fish nodejs net-tools nano deno -y
 
 # Install pip tools
 pip install --upgrade pip
