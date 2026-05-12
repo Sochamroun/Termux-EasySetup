@@ -52,7 +52,7 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/mai
 curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/refs/heads/main/setup-big.sh | bash
 ```
 ## 🔗 Download Termux x11
-[📺 Download Termux:X11](https://github.com/termux/termux-x11/tags)
+[📺 Download Termux:X11](https://github.com/termux/termux-x11/releases/download/nightly/app-universal-debug.apk)
 ## 🤩 copy paste and enter 
 ## setup recommend Use Wifi Fast Install 😎
 ---
