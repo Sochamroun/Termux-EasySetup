@@ -1,4 +1,4 @@
-# សួស្តី 🤗 សូមស្វាគមន៍មកកាន់ Termux tool Crack 
+# សួស្តី 🤗 សូមស្វាគមន៍មកកាន់ Termux tool Free 
 ![image alt](https://github.com/Sochamroun/Termux-setup.github.io/blob/aeb8e12f17ac11e545f1475a86fefca17982158a/Icon.png)
 # Hello everyone 🤔
 ## 🔗 Download Termux App
@@ -32,7 +32,7 @@
 - `1440 (2K / QHD)`
 - `2160 (4K / UHD)`
 ---
-## 📥 របៀបដំឡើង (Installation)
+## 📥 របៀបដំឡើង (Installation) និង Update Vision package 
 បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅរត់៖
 ---
 ### Copy cmd ទាំងអស់
