@@ -1,22 +1,72 @@
 # សួស្តី 🤗 សូមស្វាគមន៍មកកាន់ Termux tool Free 
-![image alt](https://github.com/Sochamroun/Termux-setup.github.io/blob/aeb8e12f17ac11e545f1475a86fefca17982158a/Icon.png)
-# Hello everyone 🤔
-## 🔗 Download Termux App
+![Banner](https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/main/Icon.png)
+# ✨ Termux Easy Setup
+
+### Free Tools for Android & Termux Users
+
+![Platform](https://img.shields.io/badge/Platform-Android-green)
+![Shell](https://img.shields.io/badge/Shell-Termux-blue)
+![License](https://img.shields.io/badge/License-Free-orange)
+![Version](https://img.shields.io/badge/Version-1.0-brightgreen)
+![Maintained](https://img.shields.io/badge/Maintained-Yes-success)
+![Termux](https://img.shields.io/badge/Supports-Termux-black)
+
+---
+## 📱 The program must be installed (កម្មវិធីត្រូវដំឡើង)
+## 🔗 Install Termux App
 [👉 click here to Download Termux-app](https://github.com/Sochamroun/Termux-setup.github.io/releases/download/App/termux.apk)
-
-## 🔗 Download Material Files
+## 🔗 Install Material Files
 [💼 Play Store Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
-# 🚀 Termux All-in-One Setup
-
- Tool ពិសេសៗក្នុង Termux install ដោយស្វ័យប្រវត្តិ។
-
-## ✨ លក្ខណៈពិសេស (Features)
-* 📦 **Update & Install**: ដំឡើង Package សំខាន់ៗ (Python, Git, NodeJS,...)។
-* 🐚 **Fish Shell**: កំណត់យក Fish shell ដែលមាន auto-suggestion ងាយស្រួលវាយកូដ។
-* 🎬 **Video Downloader**: ទាញយកវីដេអូកម្រិត 720p ពី YouTube និងបណ្ដាញសង្គមផ្សេងៗ។
-* 🎵 **Audio Downloader**: បំប្លែងវីដេអូទៅជា MP3 (256k) ដោយស្វ័យប្រវត្តិ។
-* 📡 **FTP Server**: បង្កើត Server ដើម្បីបញ្ជូន File រវាងទូរស័ព្ទ និងកុំព្យូទ័រ។
-## Edit video.sh this place (កែកន្លែងនេះ)
+## 🔗 Install Termux x11
+[📺 Download Termux:X11](https://github.com/Sochamroun/Termux-setup.github.io/releases/download/App/Termux.x11.apk)
+---
+## ✨ Features
+* 📦 Update & Install: Automatically installs essential packages (Python, Git, NodeJS,Yt-dlp etc.).
+* 🐚 Fish Shell: Sets up Fish shell with auto-suggestions for easier coding.
+* 🎬 Video Downloader: Download 720p videos from YouTube and other social media platforms.
+* 🎵 Audio Downloader: Automatically convert videos to MP3 (256k quality).
+* 📡 FTP Server: Create an FTP server for transferring files between phone and computer.
+## ✨ លក្ខណៈពិសេស
+* 📦 Update & Install៖ ដំឡើង Package សំខាន់ៗដោយស្វ័យប្រវត្តិ (Python, Git, NodeJS ជាដើម)។
+* 🐚 Fish Shell៖ កំណត់ Fish shell ដែលមាន auto-suggestion ងាយស្រួលសម្រាប់វាយកូដ។
+* 🎬 Video Downloader៖ ទាញយកវីដេអូកម្រិត 720p ពី YouTube និងបណ្ដាញសង្គមផ្សេងៗ។
+* 🎵 Audio Downloader៖ បំប្លែងវីដេអូទៅជា MP3 (256k) ដោយស្វ័យប្រវត្តិ។
+* 📡 FTP Server៖ បង្កើត FTP Server សម្រាប់ផ្ទេរ File រវាងទូរស័ព្ទ
+---
+## 📥 របៀបដំឡើង (Installation) និង Update Vision package 
+បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅ Run ៖
+---
+## ⚙️ Installation 
+## Allow Storage Access
+```bash
+termux-setup-storage
+```
+## ⚡ Small Setup 😀
+```bash
+curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/main/setup-small.sh | bash
+```
+* 🎬 Download video
+* 🎧 Download music
+* 🌐 Open FTP localhost
+* 😎 Package សំខាន់ៗ
+---
+## 🖥️ Big Setup (Requires Termux:X11)
+```bash
+curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/refs/heads/main/setup-big.sh | bash
+```
+* 🎬 Download video
+* 🎧 Download music
+* 🌐 Open FTP localhost
+* 🤔 Package សំខាន់ៗ
+* 🖥️ Desktop Ui
+---
+## 📦 Commands to use (command សម្រាប់ប្រើប្រាស់)
+- `video.sh` → Download videos 🎬  
+- `song.sh` → Download audio 🎵  
+- `ftp.sh` → Start FTP server 📡  
+- `win.sh` → Start XFCE desktop 🖥️
+---
+## 🎞️ Edit Video Quality
 ```bash
 nano video.sh
 ````
@@ -25,55 +75,18 @@ nano video.sh
         --merge-output-format mp4 \
         -S "vcodec:h264,lang,quality,res,fps,hdr:12,acodec:aac" \
         -o "$DOWNLOAD_FOLDER/%(title)s.%(ext)s" \`
-- `(height<=720)`
-- `144`
-- `240`
-- `360`
-- `480`
-- `720 (HD)`
-- `1080 (Full HD)`
-- `1440 (2K / QHD)`
-- `2160 (4K / UHD)`
+## Video Quality
+* (height<=720) Change (ប្ដូរ)
+* 144
+* 240
+* 360
+* 480
+* 720 (HD)
+* 1080 (Full HD)
+* 1440 (2K / QHD)
+* 2160 (4K / UHD)
 ---
-## 📥 របៀបដំឡើង (Installation) និង Update Vision package 
-បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅរត់៖
----
-### Copy commands 
-#### allow storage
-```bash
-termux-setup-storage
-```
-## file Small setup 😀
-```bash
-curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/main/setup-small.sh | bash
-```
-## file Big setup 🤔 need termux x11
-```bash
-curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/refs/heads/main/setup-big.sh | bash
-```
-## 🔗 Download Termux x11
-[📺 Download Termux:X11](https://github.com/Sochamroun/Termux-setup.github.io/releases/download/App/Termux.x11.apk)
-## 🤩 copy paste and enter 
-## setup recommend Use Wifi Fast Install 😎
----
-## ចំណុចសំខាន់របស់ big setup និង small setup 
-## big setup
-
-- `🎬 Download video`
-- `🎧 download music`
-- `🌐 open FTP localhost`
-- `🖥️ desktop mod`
-- `💽 3Gb File Size`
-## small setup
-- `🎬 Download video`
-- `🎧 download music`
-- `🌐 open FTP localhost`
-- `💽 1.5Gb`
-## 📦 Commands សម្រាប់ប្រើ 
-- `video.sh` → Download videos 🎬  
-- `song.sh` → Download audio 🎵  
-- `ftp.sh` → Start FTP server 📡  
-- `win.sh` → Start XFCE desktop 🖥️
+## I Recommended Setup Use Wifi 😎
 ---
 ## bugs in termux [Process completed (signal 9)]
 - `crashes on Android 12+ due to FLAG_IMMUTABLE, storage permission issues on newer Android versions, and "Process completed (signal 9)" due to battery optimization killing background processes.`
@@ -86,15 +99,16 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/ref
 - `4.Pair device (enter code shown)`
 ## Open adb shell app
 - `cick to Terminal Open ADB Shell`
-## Copy cmd to run 
+## Run This Command
 ```bash
 settings put global settings_enable_monitor_phantom_procs false
 ```
-### now termux run Linux smooth 
+### ✅ Now Termux can run smoothly on Android 12+
 ---
-## សំណាក់ល្អ ❤️ អរគុណដែលបានមើល ✅
-## Good luck 🤞 🥰
-## Facebook hang slow  
+## ❤️ Thank You
+## ⭐ Support This Project
+* If you enjoy this project, consider sharing it with friends 💖
+## Facebook Profile  
 [❤️ link Profile 👾](https://www.facebook.com/share/18MeFbhuB3/)
-### Bye 🫡
-![image alt](https://github.com/Sochamroun/Termux-setup.github.io/blob/91ceb7d192d13822a5ec2fe65917a38c621bf60f/Bye%20bye%20%20can%C4%B1m.jpeg)
+# Thanks for Using Termux Easy Setup
+# Prepared by Sochamroun
