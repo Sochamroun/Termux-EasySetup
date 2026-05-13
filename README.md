@@ -63,6 +63,7 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/ref
 * 🌐 Open FTP localhost
 * 🤔 Package សំខាន់ៗ
 * 🖥️ Desktop Ui
+* Install Linux System
 
 ---
 ## 📦 Commands to use (command សម្រាប់ប្រើប្រាស់)
