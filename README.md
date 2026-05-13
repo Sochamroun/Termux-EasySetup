@@ -36,7 +36,7 @@
 
 ---
 ## 📥 របៀបដំឡើង (Installation) និង Update Vision package 
-បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅ Run ៖
+* បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅ Run ៖
 
 ---
 ## ⚙️ Installation 
