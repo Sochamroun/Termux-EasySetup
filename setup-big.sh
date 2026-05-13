@@ -199,3 +199,9 @@ echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
 echo "mv.sh     → Download video and song one time"
 echo "win.sh     → Start XFCE desktop 🖥️"
+echo " ----------Exit 30s---------- "
+
+sleep 30
+
+# Close Termux app
+pkill -f com.termux
