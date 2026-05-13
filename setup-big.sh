@@ -13,6 +13,7 @@ yes | pkg install firefox chromium -y
 yes | pkg install pulseaudio pavucontrol -y 
 yes | pkg install mesa-demos -y 
 yes | pkg install tur-repo
+yes | pkg install mpv-x celluloid
 
 # Install pip tools
 pip install --upgrade pip
