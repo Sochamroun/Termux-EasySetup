@@ -19,6 +19,7 @@
 [💼 Play Store Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
 ## 🔗 Install Termux x11
 [📺 Download Termux:X11](https://github.com/Sochamroun/Termux-setup.github.io/releases/download/App/Termux.x11.apk)
+
 ---
 ## ✨ Features
 * 📦 Update & Install: Automatically installs essential packages (Python, Git, NodeJS,Yt-dlp etc.).
@@ -32,9 +33,11 @@
 * 🎬 Video Downloader៖ ទាញយកវីដេអូកម្រិត 720p ពី YouTube និងបណ្ដាញសង្គមផ្សេងៗ។
 * 🎵 Audio Downloader៖ បំប្លែងវីដេអូទៅជា MP3 (256k) ដោយស្វ័យប្រវត្តិ។
 * 📡 FTP Server៖ បង្កើត FTP Server សម្រាប់ផ្ទេរ File រវាងទូរស័ព្ទ
+
 ---
 ## 📥 របៀបដំឡើង (Installation) និង Update Vision package 
 បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅ Run ៖
+
 ---
 ## ⚙️ Installation 
 ## Allow Storage Access
@@ -49,6 +52,7 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/mai
 * 🎧 Download music
 * 🌐 Open FTP localhost
 * 😎 Package សំខាន់ៗ
+
 ---
 ## 🖥️ Big Setup (Requires Termux:X11)
 ```bash
@@ -59,12 +63,14 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/ref
 * 🌐 Open FTP localhost
 * 🤔 Package សំខាន់ៗ
 * 🖥️ Desktop Ui
+
 ---
 ## 📦 Commands to use (command សម្រាប់ប្រើប្រាស់)
 - `video.sh` → Download videos 🎬  
 - `song.sh` → Download audio 🎵  
 - `ftp.sh` → Start FTP server 📡  
 - `win.sh` → Start XFCE desktop 🖥️
+
 ---
 ## 🎞️ Edit Video Quality
 ```bash
