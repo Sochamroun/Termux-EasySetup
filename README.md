@@ -2,7 +2,7 @@
 ![image alt](https://github.com/Sochamroun/Termux-setup.github.io/blob/aeb8e12f17ac11e545f1475a86fefca17982158a/Icon.png)
 # Hello everyone 🤔
 ## 🔗 Download Termux App
-[👉 Open Termux ](https://github.com/Sochamroun/Termux-setup.github.io/releases/download/App/termux.apk)
+[👉 click here install Termux ](https://github.com/Sochamroun/Termux-setup.github.io/releases/download/App/termux.apk)
 
 ## 🔗 Download Material Files
 [💼 Play Store Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
