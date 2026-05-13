@@ -161,3 +161,8 @@ echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
 echo "mv.sh     → Download video and song one time"
 
+sleep 120
+
+# Close Termux app
+pkill -f com.termux
+
