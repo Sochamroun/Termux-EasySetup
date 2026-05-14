@@ -52,7 +52,7 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/mai
 * 🎧 Download music
 * 🌐 Open FTP localhost
 * 😎 Package សំខាន់ៗ
-* Install Size 1500Mb
+* Install Size 1500Mb+
 ---
 ## 🖥️ Big Setup (Requires Termux:X11)
 ```bash
@@ -63,7 +63,7 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/ref
 * 🌐 Open FTP localhost
 * 🤔 Package សំខាន់ៗ
 * 🖥️ Desktop Ui
-* Install Linux System size 4072Mb
+* Install Linux System size 4072Mb+
 
 ---
 ## 📦 Commands to use (command សម្រាប់ប្រើប្រាស់)
