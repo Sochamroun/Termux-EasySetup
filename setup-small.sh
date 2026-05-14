@@ -161,5 +161,4 @@ echo "video.sh   → Download videos 🎬"
 echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
 echo "mv.sh     → Download video and song one time"
-echo " ----------Exit CRTL+C---------- "
 
