@@ -1,7 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 echo "Starting Termux Setup install software..."
-
+# Server 
+termux-change-repo
 # update 
 yes | pkg update && yes | pkg upgrade
 
