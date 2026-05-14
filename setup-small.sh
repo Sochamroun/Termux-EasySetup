@@ -160,7 +160,7 @@ echo "video.sh   → Download videos 🎬"
 echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
 echo "mv.sh     → Download video and song one time"
-echo " ----------Exit 30s---------- "
+echo " ----------Exit 10s wait---------- "
 
 sleep 10
 
