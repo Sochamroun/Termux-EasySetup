@@ -155,7 +155,7 @@ chmod +x mv.sh
 echo ""
 echo "✅ Setup Complete!"
 echo "--------------------------------"
-echo "Commands (use this to show files)"
+echo "Commands (use this to run script files)"
 echo "video.sh   → Download videos 🎬"
 echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
