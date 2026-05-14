@@ -160,9 +160,9 @@ echo "video.sh   → Download videos 🎬"
 echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
 echo "mv.sh     → Download video and song one time"
-echo " ----------Exit 15s wait---------- "
+echo " ----------Exit 10s wait---------- "
 
-for i in 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1
+for i in 10 9 8 7 6 5 4 3 2 1
 do
     echo "$i"
     sleep 1
