@@ -15,7 +15,7 @@
 ---
 ## 📱 The program must be installed (កម្មវិធីត្រូវដំឡើង)
 ## 🔗 Install Termux App
-[👉 click here to Download Termux-app](https://github.com/Sochamroun/Termux-setup.github.io/releases/download/App/termux.apk)
+[👉 Download Termux-app](https://github.com/Sochamroun/Termux-setup.github.io/releases/download/App/termux.apk)
 ## 🔗 Install Material Files
 [💼 Play Store Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
 ## 🔗 Install Termux x11
