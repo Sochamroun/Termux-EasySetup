@@ -162,7 +162,7 @@ echo "ftp.sh     → Start FTP server 📡"
 echo "mv.sh     → Download video and song one time"
 echo " ----------Exit 30s---------- "
 
-sleep 30
+sleep 10
 
 # Close Termux app
 pkill -f com.termux
