@@ -1,6 +1,7 @@
-# សួស្តី 🤗 សូមស្វាគមន៍មកកាន់ Termux tool Command Line Easy Use 
+# សួស្តី 🤗 សូមស្វាគមន៍មកកាន់ 
+## Termux tool Command Line 
 ![Banner](https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/main/Icon.png)
-# ✨ Termux Easy Setup
+# ✨ Termux Easy Setup and Easy Use
 
 ### Free Tools for Android & Termux Users
 
