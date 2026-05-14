@@ -2,6 +2,8 @@
 
 echo "Starting Termux Setup install software..."
 
+# server 
+termux-change-repo
 # Update system
 yes | pkg update && yes | pkg upgrade
 
@@ -199,15 +201,3 @@ echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
 echo "mv.sh     → Download video and song one time"
 echo "win.sh     → Start XFCE desktop 🖥️"
-echo " ----------Exit 10s wait---------- "
-
-for i in 10 9 8 7 6 5 4 3 2 1
-do
-    echo "$i"
-    sleep 1
-done
-
-echo "-----------👋 Bye-----------"
-
-# Close Termux app
-pkill -f com.termux
