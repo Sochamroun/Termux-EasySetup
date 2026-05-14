@@ -201,7 +201,7 @@ echo "mv.sh     → Download video and song one time"
 echo "win.sh     → Start XFCE desktop 🖥️"
 echo " ----------Exit 30s---------- "
 
-sleep 30
+sleep 10
 
 # Close Termux app
 pkill -f com.termux
