@@ -74,6 +74,7 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/main/setu
 - `win.sh` → Start XFCE desktop 🖥️
 
 ---
+![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/dc83feb31cd9819bf425915577ad875d4b2f1300/linux.jpg)
 ## 🎞️ Edit Video Quality
 ```bash
 nano video.sh
