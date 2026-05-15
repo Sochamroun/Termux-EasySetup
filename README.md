@@ -119,4 +119,5 @@ settings put global settings_enable_monitor_phantom_procs false
 ## Facebook Profile  
 [❤️ link Profile 👾](https://www.facebook.com/share/18MeFbhuB3/)
 ### Thanks for Using Termux Easy Setup
+## If this project helps you, please give it a Stars ⭐
 ## Prepared by Sochamroun
