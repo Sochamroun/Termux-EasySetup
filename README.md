@@ -47,7 +47,7 @@ termux-setup-storage
 ```
 ## ⚡ Small Setup 😀
 ```bash
-curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/main/setup-small.sh | bash
+curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setup-small.sh | bash
 ```
 * 🎬 Download video
 * 🎧 Download music
@@ -57,7 +57,7 @@ curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/mai
 ---
 ## 🖥️ Big Setup (Requires Termux:X11)
 ```bash
-curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/refs/heads/main/setup-big.sh | bash
+curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setup-big.sh | bash
 ```
 * 🎬 Download video
 * 🎧 Download music
