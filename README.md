@@ -47,7 +47,7 @@ termux-setup-storage
 ```
 ## ⚡ Small Setup 😀
 ```bash
-curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setup-small.sh | bash
+curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/setup-small.sh | bash
 ```
 * 🎬 Download video
 * 🎧 Download music
