@@ -46,7 +46,7 @@ while true; do
         -f "bestvideo[height<=720][ext=mp4][fps<=60]+bestaudio[ext=m4a]/mp4" \
         --merge-output-format mp4 \
         -S "vcodec:h264,lang,quality,res,fps,hdr:12,acodec:aac" \
-        -o "$DOWNLOAD_FOLDER/%(title)s.%(ext)s" \
+        -o "$DOWNLOAD_FOLDER/%(title).80s.%(ext)s" \
         "$url" &
 
     echo "✅ Started!"
@@ -79,7 +79,7 @@ while true; do
         --audio-quality 256k \
         --embed-thumbnail \
         --add-metadata \
-        -o "$DOWNLOAD_FOLDER/%(title)s.%(ext)s" "$url" &
+        -o "$DOWNLOAD_FOLDER/%(title).80s.%(ext)s" "$url" &
 
     echo "🎧 Started!"
 done
@@ -133,7 +133,7 @@ while true; do
         -f "bestvideo[height<=720][ext=mp4][fps<=60]+bestaudio[ext=m4a]/mp4" \
         --merge-output-format mp4 \
         -S "vcodec:h264,lang,quality,res,fps,hdr:12,acodec:aac" \
-        -o "$VIDEO_FOLDER/%(title)s.%(ext)s" \
+        -o "$VIDEO_FOLDER/%(title).80s.%(ext)s" \
         "$url" &
 
     # 🎧 Audio MP3
@@ -142,7 +142,7 @@ while true; do
         --audio-quality 256k \
         --embed-thumbnail \
         --add-metadata \
-        -o "$AUDIO_FOLDER/%(title)s.%(ext)s" \
+        -o "$AUDIO_FOLDER/%(title).80s.%(ext)s" \
         "$url" &
 
     echo "✅ Download started in background"
