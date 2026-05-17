@@ -50,7 +50,7 @@ curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setu
 * 🎬 Download video
 * 🎧 Download music
 * 🌐 Open FTP localhost
-* 😎 Package សំខាន់ៗ
+* 😎 Package សំខាន់ៗ (python nodejs wget git....)
 * Install Size 1500Mb+
 ---
 ## 🖥️ Big Setup (Requires Termux:X11)
@@ -60,7 +60,7 @@ curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setu
 * 🎬 Download video
 * 🎧 Download music
 * 🌐 Open FTP localhost
-* 🤔 Package សំខាន់ៗ
+* 🤔 Package សំខាន់ៗ (firefox chromium mpv-x xfce4....)
 * 🖥️ Desktop Ui
 * Install Linux System size 4072Mb+
 
