@@ -87,7 +87,7 @@ while true; do
         --audio-quality 256k \
         --embed-thumbnail \
         --add-metadata \
-        -o "$DOWNLOAD_FOLDER/%(title)s.%(ext)s" "$url" &
+        -o "$DOWNLOAD_FOLDER/%(title).80s.%(ext)s" "$url" &
 
     echo "🎧 Started!"
 done
@@ -181,7 +181,7 @@ while true; do
         --audio-quality 256k \
         --embed-thumbnail \
         --add-metadata \
-        -o "$AUDIO_FOLDER/%(title)s.%(ext)s" \
+        -o "$AUDIO_FOLDER/%(title).80s.%(ext)s" \
         "$url" &
 
     echo "✅ Download started in background"
