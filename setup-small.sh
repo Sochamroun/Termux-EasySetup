@@ -7,7 +7,7 @@ termux-change-repo
 yes | pkg update && yes | pkg upgrade
 
 # Install packages
-yes | pkg install python ffmpeg git tmux wget unzip iproute2 libqrencode php fish nodejs net-tools nano deno -y
+yes | pkg install python ffmpeg git htop tmux wget unzip iproute2 libqrencode php fish nodejs net-tools nano deno -y
 
 # Install pip tools
 pip install --upgrade pip
