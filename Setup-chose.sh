@@ -1,8 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-# Auto setup storage first
-termux-setup-storage
-
 while true
 do
     clear
@@ -14,7 +11,6 @@ do
     echo "1. Small Setup   📦  Size: 1500MB+"
     echo "2. Big Setup     💾  Size: 4072MB+"
     echo ""
-    echo " Create by Sochamroun"
     echo "Press CTRL+C to Exit"
     echo "---------------------------------"
     read -p "Choose option (1-2): " choice
