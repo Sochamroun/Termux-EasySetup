@@ -94,6 +94,10 @@ nano video.sh
 * 2160 (4K / UHD)
 ---
 ## I Recommended Setup Use Wifi 😎
+### Choose select Setup
+```bash
+curl -sL https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/Setup-chose.sh | bash
+```
 ---
 ## bugs in termux [Process completed (signal 9)]
 - `crashes on Android 12+ due to FLAG_IMMUTABLE, storage permission issues on newer Android versions, and "Process completed (signal 9)" due to battery optimization killing background processes.`
