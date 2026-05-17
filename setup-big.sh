@@ -8,7 +8,7 @@ termux-change-repo
 yes | pkg update && yes | pkg upgrade
 
 # Install packages
-yes | pkg install python ffmpeg git tmux wget unzip iproute2 libqrencode cloudflared fish nodejs net-tools nano deno -y
+yes | pkg install python ffmpeg git tmux wget unzip iproute2 libqrencode cloudflared htop php fish nodejs net-tools nano deno -y
 yes | pkg install x11-repo -y
 yes | pkg install termux-x11-nightly gimp xfce4 xfce4-terminal xfce4-taskmanager synaptic dbus -y
 yes | pkg install firefox chromium -y 
