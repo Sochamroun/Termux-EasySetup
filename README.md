@@ -12,6 +12,10 @@
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-success)
 ![Termux](https://img.shields.io/badge/Supports-Termux-black)
 
+![YouTube](https://img.shields.io/badge/YouTube-red?logo=youtube&logoColor=white)
+![Facebook](https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white)
+![TikTok](https://img.shields.io/badge/TikTok-black?logo=tiktok&logoColor=white)
+
 ---
 ## 📱 The program must be installed (កម្មវិធីត្រូវដំឡើង)
 ## 🔗 Install Termux App and Termux x11
