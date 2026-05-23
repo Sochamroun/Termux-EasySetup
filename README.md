@@ -74,7 +74,7 @@ curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setu
 - `song.sh` → Download audio 🎵  
 - `ftp.sh` → Start FTP server 📡  
 - `win.sh` → Start XFCE desktop 🖥️
-- `ai.sh`  → Ai localhost Gemma
+- `ai.sh`  → Ai localhost
 
 ---
 ![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/dc83feb31cd9819bf425915577ad875d4b2f1300/linux.jpg)
@@ -98,6 +98,21 @@ nano video.sh
 * 1440 (2K / QHD)
 * 2160 (4K / UHD)
 ---
+
+# Coder (អ្នកសរសេរកូដ)
+## AstroNvim [Official Webpage](https://docs.astronvim.com/)
+* Setup AstroNvim
+## Install 📦 Package
+```bash
+pkg install neovim nodejs-lts ripgrep -y
+```
+## Git Clone AstroNvim for Linux 
+```bash
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+nvim
+```
+## How to use 
 ## I Recommended Setup Use Wifi 😎
 
 ---
