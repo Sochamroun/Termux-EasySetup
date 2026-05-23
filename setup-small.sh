@@ -10,6 +10,7 @@ yes | pkg update && yes | pkg upgrade
 yes | pkg install python ffmpeg git htop tmux wget unzip iproute2 libqrencode php fish nodejs net-tools nano deno -y
 yes | pkg install tur-repo -y
 yes | pkg install ollama -y
+
 # Install pip tools
 pip install --upgrade pip
 pip install flask yt-dlp pyftpdlib
@@ -153,6 +154,7 @@ done
 EOF
 
 chmod +x mv.sh
+
 ## Ai local Gemma 
 cat > ~/ai.sh << 'EOF'
 #!/data/data/com.termux/files/usr/bin/bash
