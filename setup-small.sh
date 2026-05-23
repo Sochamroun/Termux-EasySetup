@@ -159,18 +159,104 @@ chmod +x mv.sh
 cat > ~/ai.sh << 'EOF'
 #!/data/data/com.termux/files/usr/bin/bash
 
-# Start Ollama server in background
-echo "🚀 Starting Ollama server..."
+# ==========================================
+# 🤖 Local AI Launcher for Ollama
+# 📱 Android + Termux
+# ==========================================
+
+clear
+
+# Check Ollama
+if ! command -v ollama &> /dev/null; then
+    echo "❌ Ollama not installed!"
+    echo "Install first:"
+    echo "pkg install ollama"
+    exit 1
+fi
+
+# Start Ollama Server
+echo "🚀 Starting Ollama Server..."
 ollama serve > /dev/null 2>&1 &
 
-# Wait a bit for server startup
-sleep 5
+sleep 3
 
-# Run Gemma 3 4B model
-echo "🤖 Running Gemma3 4B..."
-ollama run gemma3:4b
+while true
+do
+    clear
 
-done 
+    echo "=================================="
+    echo " 🤖 LOCAL AI SELECT MENU"
+    echo "=================================="
+    echo ""
+    echo "1. Qwen2.5 3B"
+    echo "2. Gemma2 2B"
+    echo "3. Phi4 Mini"
+    echo "4. Llama3.2 3B"
+    echo "5. Qwen2.5 Coder 1.5B"
+    echo "6. Install All Models"
+    echo "0. Exit"
+    echo ""
+
+    read -p "📌 Select AI: " choice
+
+    case $choice in
+
+        1)
+            clear
+            echo "🧠 Running Qwen2.5 3B..."
+            ollama run qwen2.5:3b
+            ;;
+
+        2)
+            clear
+            echo "⚡ Running Gemma2 2B..."
+            ollama run gemma2:2b
+            ;;
+
+        3)
+            clear
+            echo "🔥 Running Phi4 Mini..."
+            ollama run phi4-mini
+            ;;
+
+        4)
+            clear
+            echo "🌐 Running Llama3.2 3B..."
+            ollama run llama3.2:3b
+            ;;
+
+        5)
+            clear
+            echo "💻 Running Qwen2.5 Coder..."
+            ollama run qwen2.5-coder:1.5b
+            ;;
+
+        6)
+            clear
+            echo "📦 Installing Models..."
+            
+            ollama pull qwen2.5:3b
+            ollama pull gemma2:2b
+            ollama pull phi4-mini
+            ollama pull llama3.2:3b
+            ollama pull qwen2.5-coder:1.5b
+
+            echo ""
+            echo "✅ All Models Installed!"
+            read -p "Press Enter..."
+            ;;
+
+        0)
+            echo "👋 Bye!"
+            exit
+            ;;
+
+        *)
+            echo "❌ Invalid choice!"
+            sleep 2
+            ;;
+    esac
+done
 EOF
 
 chmod +x ai.sh
