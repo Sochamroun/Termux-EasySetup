@@ -116,10 +116,12 @@ nvim
 ```bash
 nvim
 ```
-- nvim (name).sh .js .py other
-- mkdir (name) Command Create Folder
-- cd (name) Command Open Folder
-- ls command show all folder
+- `nvim` filename.sh .js .py other
+- `mkdir` foldername Command Create Folder
+- `cd` Foldername Command Open Folder
+- `ls` command show all folder
+- `rm` filename delete file
+- `rmdir` foldername delete folder 
 ![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/7724afce2bd07f015cdeccfe754fb1f1c1a78e2a/Coder.jpg)
 ---
 ## I Recommended Setup Use Wifi 😎
