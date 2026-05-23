@@ -8,7 +8,8 @@ yes | pkg update && yes | pkg upgrade
 
 # Install packages
 yes | pkg install python ffmpeg git htop tmux wget unzip iproute2 libqrencode php fish nodejs net-tools nano deno -y
-
+yes | pkg install tur-repo -y
+yes | pkg install ollama -y
 # Install pip tools
 pip install --upgrade pip
 pip install flask yt-dlp pyftpdlib
@@ -152,6 +153,25 @@ done
 EOF
 
 chmod +x mv.sh
+## Ai local Gemma 
+cat > ~/ai.sh << 'EOF'
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Start Ollama server in background
+echo "🚀 Starting Ollama server..."
+ollama serve > /dev/null 2>&1 &
+
+# Wait a bit for server startup
+sleep 5
+
+# Run Gemma 3 4B model
+echo "🤖 Running Gemma3 4B..."
+ollama run gemma3:4b
+
+done 
+EOF
+
+chmod +x ai.sh
 ## hi
 echo ""
 echo "✅ Setup Complete!"
@@ -161,4 +181,4 @@ echo "video.sh   → Download videos 🎬"
 echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
 echo "mv.sh     → Download video and song one time"
-
+echo "ai.sh     → Ai Run Local"
