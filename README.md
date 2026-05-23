@@ -101,12 +101,12 @@ nano video.sh
 
 # Coder (អ្នកសរសេរកូដ)
 ## AstroNvim [Official Webpage](https://docs.astronvim.com/)
-* Setup AstroNvim
+* Setup AstroNvim For Termux Users 
 ## Install 📦 Package
 ```bash
 pkg install neovim nodejs-lts ripgrep -y
 ```
-## Git Clone AstroNvim for Linux 
+## Git Clone AstroNvim Linux 
 ```bash
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 rm -rf ~/.config/nvim/.git
