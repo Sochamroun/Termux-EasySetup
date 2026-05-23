@@ -74,6 +74,7 @@ curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setu
 - `song.sh` → Download audio 🎵  
 - `ftp.sh` → Start FTP server 📡  
 - `win.sh` → Start XFCE desktop 🖥️
+- `ai.sh`  → Ai localhost Gemma
 
 ---
 ![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/dc83feb31cd9819bf425915577ad875d4b2f1300/linux.jpg)
