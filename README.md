@@ -112,7 +112,11 @@ git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 nvim
 ```
-## How to use 
+## How to use command 
+```bash
+nvim
+```
+
 ## I Recommended Setup Use Wifi 😎
 
 ---
