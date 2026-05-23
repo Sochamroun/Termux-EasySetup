@@ -116,7 +116,10 @@ nvim
 ```bash
 nvim
 ```
-
+- nvim (name).sh .js .py other
+- mkdir (name) Command Create Folder
+- cd (name) Command Open Folder
+- ls command show all folder 
 ## I Recommended Setup Use Wifi 😎
 
 ---
