@@ -113,10 +113,7 @@ rm -rf ~/.config/nvim/.git
 nvim
 ```
 ## How to use command 
-```bash
-nvim
-```
-- `nvim` filename.sh .js .py other
+- `nvim` filename Ex: .sh .js .py .html .css other
 - `mkdir` foldername Command Create Folder
 - `cd` Foldername Command Open Folder
 - `ls` command show all folder
