@@ -119,9 +119,10 @@ nvim
 - nvim (name).sh .js .py other
 - mkdir (name) Command Create Folder
 - cd (name) Command Open Folder
-- ls command show all folder 
+- ls command show all folder
+![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/7724afce2bd07f015cdeccfe754fb1f1c1a78e2a/Coder.jpg)
+---
 ## I Recommended Setup Use Wifi 😎
-
 ---
 ## bugs in termux [Process completed (signal 9)]
 - `crashes on Android 12+ due to FLAG_IMMUTABLE, storage permission issues on newer Android versions, and "Process completed (signal 9)" due to battery optimization killing background processes.`
