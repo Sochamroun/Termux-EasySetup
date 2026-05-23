@@ -7,7 +7,7 @@ termux-change-repo
 yes | pkg update && yes | pkg upgrade
 
 # Install packages
-yes | pkg install python ffmpeg git htop tmux wget unzip iproute2 libqrencode php fish nodejs net-tools nano deno -y
+yes | pkg install python ffmpeg git tmux wget unzip php fish nodejs net-tools nano deno -y
 yes | pkg install tur-repo -y
 yes | pkg install ollama -y
 
@@ -268,5 +268,5 @@ echo "Commands (use this to run script files)"
 echo "video.sh   → Download videos 🎬"
 echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
-echo "mv.sh     → Download video and song one time"
-echo "ai.sh     → Ai Run Local"
+echo "mv.sh      → Download video and song one time"
+echo "ai.sh      → Ai Run Local"
