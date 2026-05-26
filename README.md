@@ -1,4 +1,4 @@
-# សួស្តី 🤗 សូមស្វាគមន៍មកកាន់ 
+# សួស្តី សូមស្វាគមន៍មកកាន់ 
 ## Termux tool Command Line 
 ![Banner](https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/main/Icon.png)
 # ✨ Termux Easy Setup and Easy Use
