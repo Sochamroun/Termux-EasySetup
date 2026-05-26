@@ -151,3 +151,6 @@ settings put global settings_enable_monitor_phantom_procs false
     <p><b> Prepared by Sochamroun </b></p>
     <p><b>If this project helps you, please give it a Stars ⭐</b></p>
 </div>
+---
+
+*Last updated: 2026*
