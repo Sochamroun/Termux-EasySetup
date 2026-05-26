@@ -15,7 +15,7 @@
 ![YouTube](https://img.shields.io/badge/YouTube-red?logo=youtube&logoColor=white)
 ![Facebook](https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white)
 ![TikTok](https://img.shields.io/badge/TikTok-black?logo=tiktok&logoColor=white)
-![Visitors](https://komarev.com/ghpvc/?username=Sochamroun&repo=Termux-EasySetup&color=blue)
+![Stars](https://img.shields.io/github/stars/Sochamroun/Termux-EasySetup)
 
 ---
 ## 📱 The program must be installed (កម្មវិធីត្រូវដំឡើង)
