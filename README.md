@@ -119,8 +119,24 @@ nvim
 - `cd` Foldername Command Open Folder
 - `ls` command show all folder
 - `rm` filename delete file
-- `rmdir` foldername delete folder 
+- `rmdir` foldername delete folder
 ![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/7724afce2bd07f015cdeccfe754fb1f1c1a78e2a/Coder.jpg)
+---
+## Live preview Webpage build
+- Use Python to Host 'index.html'
+```bash
+python -m http.server 5000
+```
+* Webpage Ip Localhost 📦
+```bash
+127.0.0.1:5000
+```
+* Or ip Local Lan Network 🌐 Wifi
+- `192.168.x.x:5000`
+## Net Analyzer App
+[Download](https://play.google.com/store/apps/details?id=net.techet.netanalyzerlite.an)
+![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/68f619c05ccdbd63b3ba155125e8cdf83bf4b03e/View.png)
+
 ---
 ## I Recommended Setup Use Wifi 😎
 ---
