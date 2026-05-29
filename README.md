@@ -141,7 +141,7 @@ python -m http.server 5000
 ## Minecraft Server Paper Install 📁
 * Install `openjdk-21 -y` Java 21 And other
 ```bash
-yes | pkg install openjdk-17 openjdk-21 -y
+yes | pkg install openjdk-21-x -y
 ```
 ## Download Paper Server Setup 👇
 ```bash
