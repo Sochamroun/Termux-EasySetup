@@ -140,14 +140,7 @@ python -m http.server 5000
 ![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/68f619c05ccdbd63b3ba155125e8cdf83bf4b03e/View.png)
 
 ---
-## How to Run 💡
-* `Paper-Server-Setup.sh` Or
-* `bash Paper-Server-Setup.sh`
-* To ⚡ Run server
-* Find File name Server you create `xxxxx.sh`
-## Plugins Website download
-* Recommended
-[Modrinth](https://modrinth.com/discover/plugins)
+
 ## I Recommended Setup Use Wifi 😎
 ---
 ## bugs in termux [Process completed (signal 9)]
