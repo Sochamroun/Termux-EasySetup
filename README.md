@@ -138,15 +138,6 @@ python -m http.server 5000
 ![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/68f619c05ccdbd63b3ba155125e8cdf83bf4b03e/View.png)
 
 ---
-## Minecraft Server Paper Install 📁
-* Install `openjdk-21 -y` Java 21 And other
-```bash
-yes | pkg install openjdk-21-x -y
-```
-## Download Paper Server Setup 👇
-```bash
-curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
-```
 ## How to Run 💡
 * `Paper-Server-Setup.sh` Or
 * `bash Paper-Server-Setup.sh`
