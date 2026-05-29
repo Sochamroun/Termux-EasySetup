@@ -3,7 +3,7 @@
 clear
 echo "===================================="
 echo " 📁Minecraft Paper Server Free"
-echo " 🌐Termux Auto Setup by Roun"
+echo " 🌐Termux Auto Setup by Sochamroun"
 echo "===================================="
 
 sleep 2
