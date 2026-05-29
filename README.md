@@ -148,10 +148,13 @@ yes | pkg install openjdk-17 openjdk-21 -y
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/f5c0bd521d0514acf031afe514d6e6e172903e00/Paper-Server-Setup.sh && chmod +x Paper-Server-Setup.sh
 ```
 ## How to Run 💡
-* `Paper-Server-Setup.sh`
-* Or `bash Paper-Server-Setup.sh`
+* `Paper-Server-Setup.sh` Or
+* `bash Paper-Server-Setup.sh`
 * To ⚡ Run server
 * Find File name Server you create `xxxxx.sh`
+## Plugins Website download
+* Recommended
+[Modrinth](https://modrinth.com/discover/plugins)
 ## I Recommended Setup Use Wifi 😎
 ---
 ## bugs in termux [Process completed (signal 9)]
