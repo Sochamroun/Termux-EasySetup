@@ -145,7 +145,7 @@ yes | pkg install openjdk-21-x -y
 ```
 ## Download Paper Server Setup 👇
 ```bash
-curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/f5c0bd521d0514acf031afe514d6e6e172903e00/Paper-Server-Setup.sh && chmod +x Paper-Server-Setup.sh
+curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ```
 ## How to Run 💡
 * `Paper-Server-Setup.sh` Or
