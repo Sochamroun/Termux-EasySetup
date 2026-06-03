@@ -101,7 +101,12 @@ nano video.sh
 * 1440 (2K / QHD)
 * 2160 (4K / UHD)
 ---
-
+## Can not Download video Use Command 
+```bash
+yt-dlp -U
+```
+* Update `Yt-dlp` latest vision
+* Working Download video Again 😮
 # Coder (អ្នកសរសេរកូដ)
 ## AstroNvim [Official Webpage](https://docs.astronvim.com/)
 * Setup AstroNvim For Termux Users 
