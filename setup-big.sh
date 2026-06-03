@@ -20,6 +20,7 @@ yes | pkg install mpv-x celluloid feh -y
 # Install pip tools
 pip install --upgrade pip
 pip install flask yt-dlp pyftpdlib
+yt-dlp -U
 
 # Fix fish config folder (important)
 mkdir -p ~/.config/fish
