@@ -13,7 +13,7 @@ yes | pkg install ollama -y
 
 # Install pip tools
 pip install --upgrade pip
-pip install flask yt-dlp pyftpdlib
+pip install flask yt-dlp pyftpdlib -y
 
 # Fix fish config folder (important)
 mkdir -p ~/.config/fish
