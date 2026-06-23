@@ -151,11 +151,11 @@ python -m http.server 5000
 ## Install Java JDK 17 and 21
 ## OpenJDK 17 ☕
 ```bash
-pkg install openjdk-17
+yes | pkg install openjdk-17
 ```
 ## OpenJDK 21
 ```bash
-pkg install openjdk-21
+yes | pkg install openjdk-21
 ```
 ---
 ## Downloaded Script Shell 
