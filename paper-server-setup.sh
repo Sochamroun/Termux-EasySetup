@@ -104,6 +104,23 @@ online-mode=false
 EOF
 fi
 
+echo ""
+echo "Setting MOTD..."
+
+echo "Enter MOTD text:"
+read MOTD
+
+if [ -f server.properties ]; then
+    # កែ MOTD បើមានរួច
+    sed -i "s/^motd=.*/motd=$MOTD/" server.properties
+
+    # បើមិនមាន motd ទេ → បន្ថែមថ្មី
+    grep -q "^motd=" server.properties || echo "motd=$MOTD" >> server.properties
+else
+    echo "motd=$MOTD" > server.properties
+fi
+
+echo "✅ MOTD set: $MOTD"
 echo "✅ online-mode=false applied"
 
 echo ""
