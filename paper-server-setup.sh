@@ -78,6 +78,10 @@ echo "Accepting EULA..."
 sed -i 's/eula=false/eula=true/g' eula.txt
 
 echo ""
+echo "Setting online-mode=false..."
+sed -i 's/online-mode=true/online-mode=false/g' server.properties
+
+echo ""
 echo "Creating plugins folder..."
 mkdir -p plugins
 
