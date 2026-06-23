@@ -2,11 +2,15 @@
 
 clear
 echo "===================================="
-echo " 📁Minecraft Paper Server Free"
-echo " 🌐Termux Auto Setup by Roun"
+echo " 📁 Minecraft Paper Server Free"
+echo " 🌐 Termux Auto Setup by Roun"
 echo "===================================="
 
 sleep 2
+
+echo "Install required packages"
+
+pkg install curl wget jq openjdk-21 -y
 
 echo ""
 echo "Enter server folder name:"
@@ -25,9 +29,9 @@ echo "Getting latest Paper build..."
 
 BUILD=$(curl -s https://api.papermc.io/v2/projects/paper/versions/$VERSION | jq '.builds[-1]')
 
-if [ "$BUILD" = "null" ]; then
-  echo "❌ Version not found!"
-  exit
+if [ "$BUILD" = "null" ] || [ -z "$BUILD" ]; then
+echo "❌ Version not found!"
+exit
 fi
 
 echo "✅ Latest build: $BUILD"
@@ -36,7 +40,12 @@ URL="https://api.papermc.io/v2/projects/paper/versions/$VERSION/builds/$BUILD/do
 
 echo ""
 echo "Downloading Paper server..."
-wget $URL -O server.jar
+wget "$URL" -O server.jar
+
+if [ ! -f server.jar ]; then
+echo "❌ Download failed!"
+exit
+fi
 
 echo ""
 echo "Select RAM size"
@@ -50,14 +59,15 @@ echo "6) 6GB"
 read RAMCHOICE
 
 case $RAMCHOICE in
-1) RAM="1G";;
-2) RAM="2G";;
-3) RAM="3G";;
-4) RAM="4G";;
-5) RAM="5G";;
-6) RAM="6G";;
-*) RAM="2G";;
-esac
+
+1) RAM="1G" ;;
+2) RAM="2G" ;;
+3) RAM="3G" ;;
+4) RAM="4G" ;;
+5) RAM="5G" ;;
+6) RAM="6G" ;;
+   *) RAM="2G" ;;
+   esac
 
 echo ""
 echo "Creating start.sh..."
@@ -71,15 +81,30 @@ chmod +x start.sh
 
 echo ""
 echo "Running server first time..."
-./start.sh
+timeout 60s ./start.sh
 
 echo ""
 echo "Accepting EULA..."
+if [ -f eula.txt ]; then
 sed -i 's/eula=false/eula=true/g' eula.txt
+fi
 
 echo ""
 echo "Setting online-mode=false..."
-sed -i 's/online-mode=true/online-mode=false/g' server.properties
+
+if [ -f server.properties ]; then
+sed -i 's/^online-mode=.*/online-mode=false/' server.properties
+
+grep -q "^online-mode=" server.properties || \
+echo "online-mode=false" >> server.properties
+
+else
+cat > server.properties <<EOF
+online-mode=false
+EOF
+fi
+
+echo "✅ online-mode=false applied"
 
 echo ""
 echo "Creating plugins folder..."
@@ -102,7 +127,13 @@ echo " ✅ Server Installed Successfully"
 echo "===================================="
 
 echo ""
-echo "📁 Folder: cd ~/$SERVERNAME"
+echo "📁 Folder:"
+echo "cd ~/$SERVERNAME"
+
 echo ""
 echo "▶ Start server:"
-echo "bash $SERVERNAME.sh"
+echo "bash ~/$SERVERNAME.sh"
+
+echo ""
+echo "🔓 Crack Server Enabled"
+echo "online-mode=false"
