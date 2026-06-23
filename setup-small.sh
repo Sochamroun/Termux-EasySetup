@@ -15,7 +15,7 @@ yes | pkg install jq -y
 # Install pip tools
 pip install --upgrade pip
 pip install flask yt-dlp pyftpdlib 
-yt-dlp -U
+pip install -U yt-dlp
 
 # Fix fish config folder (important)
 mkdir -p ~/.config/fish
