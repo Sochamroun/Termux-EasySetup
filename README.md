@@ -146,6 +146,28 @@ python -m http.server 5000
 
 ---
 
+## Minecraft Paper Server Install 
+* Install For Termux App In Android Device 🤨
+## Install Java JDK 17 and 21
+## OpenJDK 17 ☕
+```bash
+pkg install openjdk-17
+```
+## OpenJDK 21
+```bash
+pkg install openjdk-21
+```
+---
+## Downloaded Script Shell 
+```bash
+curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
+```
+## How To Run script shell
+```bash
+paper-server-setup.sh
+```
+
+
 ## I Recommended Setup Use Wifi 😎
 ---
 ## bugs in termux [Process completed (signal 9)]
