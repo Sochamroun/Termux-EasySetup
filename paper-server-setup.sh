@@ -81,7 +81,7 @@ chmod +x start.sh
 
 echo ""
 echo "Running server first time..."
-timeout 60s ./start.sh
+./start.sh
 
 echo ""
 echo "Accepting EULA..."
