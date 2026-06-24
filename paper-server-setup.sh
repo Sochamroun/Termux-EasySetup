@@ -90,35 +90,71 @@ sed -i 's/eula=false/eula=true/g' eula.txt
 fi
 
 echo ""
-echo "Setting online-mode=false..."
+echo "===== Server Settings ====="
 
-if [ -f server.properties ]; then
-sed -i 's/^online-mode=.*/online-mode=false/' server.properties
+# Online Mode
+echo "Online Mode:"
+echo "1) false (Offline/Cracked)"
+echo "2) true (Premium)"
+read -p "Choose (1-2): " ONLINE_CHOICE
 
-grep -q "^online-mode=" server.properties || \
-echo "online-mode=false" >> server.properties
-
+if [ "$ONLINE_CHOICE" = "2" ]; then
+    ONLINE_MODE=true
 else
+    ONLINE_MODE=false
+fi
+
+# View Distance
+read -p "View Distance (chunks, default 10): " VIEW_DISTANCE
+VIEW_DISTANCE=${VIEW_DISTANCE:-10}
+
+# Server Port
+read -p "Server Port (default 25565): " SERVER_PORT
+SERVER_PORT=${SERVER_PORT:-25565}
+
+# Max Players
+read -p "Max Players (default 20): " MAX_PLAYERS
+MAX_PLAYERS=${MAX_PLAYERS:-20}
+
+# Level Seed
+read -p "Level Seed (leave blank for random): " LEVEL_SEED
+
+# Hardcore
+echo ""
+echo "Hardcore Mode:"
+echo "1) false"
+echo "2) true"
+read -p "Choose (1-2): " HARDCORE_CHOICE
+
+if [ "$HARDCORE_CHOICE" = "2" ]; then
+    HARDCORE=true
+else
+    HARDCORE=false
+fi
+
+# MOTD
+echo ""
+read -p "Enter MOTD: " MOTD
+
+echo ""
+echo "Writing server.properties..."
+
 cat > server.properties <<EOF
-online-mode=false
+online-mode=$ONLINE_MODE
+view-distance=$VIEW_DISTANCE
+server-port=$SERVER_PORT
+max-players=$MAX_PLAYERS
+hardcore=$HARDCORE
+motd=$MOTD
 EOF
+
+# Add level-seed only if user entered one
+if [ -n "$LEVEL_SEED" ]; then
+    echo "level-seed=$LEVEL_SEED" >> server.properties
 fi
 
 echo ""
-echo "Setting MOTD..."
-
-echo "Enter MOTD text:"
-read MOTD
-
-if [ -f server.properties ]; then
-    # កែ MOTD បើមានរួច
-    sed -i "s/^motd=.*/motd=$MOTD/" server.properties
-
-    # បើមិនមាន motd ទេ → បន្ថែមថ្មី
-    grep -q "^motd=" server.properties || echo "motd=$MOTD" >> server.properties
-else
-    echo "motd=$MOTD" > server.properties
-fi
+echo "✅ Settings saved!"
 
 echo "✅ MOTD set: $MOTD"
 echo "✅ online-mode=false applied"
@@ -153,4 +189,4 @@ echo "bash ~/$SERVERNAME.sh"
 
 echo ""
 echo "🔓 Crack Server Enabled"
-echo "online-mode=false"
+echo "online-mode=$ONLINE_MODE"
