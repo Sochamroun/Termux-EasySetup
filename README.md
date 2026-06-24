@@ -166,7 +166,11 @@ curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/hea
 ```bash
 paper-server-setup.sh
 ```
-
+## Bot Join Server Setup
+* Download script shell setup
+```bash
+curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/bot-setup-free.sh && chmod +x bot-setup-free.sh
+```
 
 ## I Recommended Setup Use Wifi 😎
 ---
