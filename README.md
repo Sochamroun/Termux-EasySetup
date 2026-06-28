@@ -158,7 +158,7 @@ yes | pkg install openjdk-17
 yes | pkg install openjdk-21
 ```
 ---
-## Downloaded Script Shell 🧾
+## Downloaded Script Shell Install Server 🧾
 ```bash
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ```
