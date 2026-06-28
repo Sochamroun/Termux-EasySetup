@@ -3,7 +3,7 @@
 clear
 echo "==============================================="
 echo " 📁 Minecraft Paper Server Install"
-echo " 🌐 Termux Script Auto Setup by Sochamroun KH"
+echo " 🌐 Termux Script Auto Setup by Sochamroun"
 echo "==============================================="
 
 sleep 5
