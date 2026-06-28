@@ -1,10 +1,10 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 clear
-echo "===================================="
+echo "==============================================="
 echo " 📁 Minecraft Paper Server Install"
 echo " 🌐 Termux Script Auto Setup by Sochamroun KH"
-echo "===================================="
+echo "==============================================="
 
 sleep 5
 
