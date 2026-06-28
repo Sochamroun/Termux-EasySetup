@@ -10,7 +10,7 @@ sleep 5
 
 echo "Install required packages"
 
-yes | pkg install curl wget jq openjdk-21 iproute2 -y
+yes | pkg install curl iproute2 wget jq openjdk-21 -y
 
 echo ""
 echo "Enter server folder name:"
