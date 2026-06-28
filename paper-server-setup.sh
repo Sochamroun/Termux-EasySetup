@@ -3,7 +3,7 @@
 clear
 echo "===================================="
 echo " 📁 Minecraft Paper Server Install"
-echo " 🌐 Termux Script Auto Setup by Sochamroun 🇰🇭"
+echo " 🌐 Termux Script Auto Setup by Sochamroun KH"
 echo "===================================="
 
 sleep 5
@@ -172,6 +172,7 @@ cat > ~/$SERVERNAME.sh <<EOF
 ip_address=\$(ip -4 addr show wlan0 | grep -oP 'inet \K[\d.]+')
 
 echo "IP Server Minecraft✅: \$ip_address"
+echo "Please Wait Server Run 😎"
 sleep 10
 
 cd ~/$SERVERNAME || exit
@@ -196,7 +197,7 @@ echo "bash ~/$SERVERNAME.sh"
 echo ""
 echo "🔓 Server Enabled 🧐"
 
-sleep 3
+sleep 2
 
 echo "true = Premium ✅"
 echo "false = Offline/Cracked 🤫" 
