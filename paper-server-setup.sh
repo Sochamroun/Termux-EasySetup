@@ -98,7 +98,7 @@ echo "1) false (Offline/Cracked)"
 echo "2) true (Premium)"
 read -p "Choose (1-2): " ONLINE_CHOICE
 
-if [ "$ONLINE_CHOICE" = "2" ]; then
+if [ "$ONLINE_CHOICE" = "1" ]; then
     ONLINE_MODE=true
 else
     ONLINE_MODE=false
@@ -126,7 +126,7 @@ echo "1) false"
 echo "2) true"
 read -p "Choose (1-2): " HARDCORE_CHOICE
 
-if [ "$HARDCORE_CHOICE"Crack" ]; then
+if [ "$HARDCORE_CHOICE" = "1" ]; then
     HARDCORE=true
 else
     HARDCORE=false
@@ -168,6 +168,12 @@ echo "Creating shortcut script..."
 
 cat > ~/$SERVERNAME.sh <<EOF
 #!/data/data/com.termux/files/usr/bin/bash
+
+ip_address=\$(ip -4 addr show wlan0 | grep -oP 'inet \K[\d.]+')
+
+echo "IP Server Minecraft✅: \$ip_address"
+sleep 10
+
 cd ~/$SERVERNAME || exit
 ./start.sh
 EOF
