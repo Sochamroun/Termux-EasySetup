@@ -207,5 +207,6 @@ sleep 2
 
 echo "true = Premium ✅"
 echo "false = Offline/Cracked 🤫" 
-echo "online-mode=$ONLINE_MODE"
-echo "hardcore=$HARDCORE"
+echo " 🍎online-mode=$ONLINE_MODE"
+echo " 😠hardcore=$HARDCORE"
+echo " 😎Player=$MAX_PLAYERS"
