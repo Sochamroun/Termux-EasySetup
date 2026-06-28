@@ -20,7 +20,7 @@ mkdir -p ~/$SERVERNAME
 cd ~/$SERVERNAME || exit
 
 echo ""
-echo "Enter Minecraft version🥱"
+echo "Enter Minecraft version 🎲 "
 echo "Example: 1.20.4 / 1.21.1 "
 read VERSION
 
