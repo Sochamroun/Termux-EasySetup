@@ -11,6 +11,7 @@ yes | pkg install python ffmpeg git tmux wget unzip php fish nodejs net-tools na
 yes | pkg install tur-repo -y
 yes | pkg install ollama -y
 yes | pkg install jq -y
+yes | pkg install iproute2 -y 
 
 # Install pip tools
 pip install --upgrade pip
