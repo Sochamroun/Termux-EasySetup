@@ -160,7 +160,7 @@ yes | pkg install openjdk-21
 ---
 ## Downloaded Script Shell Install Server 🧾
 ```bash
-curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
+curl -sLO https://github.com/Sochamroun/Termux-EasySetup/blob/09ae7d4b5d67021978e3feb1646222d0f738f76e/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ```
 ## How To Run script shell ⭐
 ```bash
