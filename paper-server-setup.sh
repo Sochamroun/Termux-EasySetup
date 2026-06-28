@@ -98,11 +98,14 @@ echo "1) false (Offline/Cracked)"
 echo "2) true (Premium)"
 read -p "Choose (1-2): " ONLINE_CHOICE
 
-if [ "$ONLINE_CHOICE" = "1" ]; then
-    ONLINE_MODE=true
-else
-    ONLINE_MODE=false
-fi
+case "$ONLINE_CHOICE" in
+    1) ONLINE_MODE=false ;;
+    2) ONLINE_MODE=true ;;
+    *)
+        echo "Invalid choice! Using default: false (Offline/Cracked)"
+        ONLINE_MODE=false
+        ;;
+esac
 
 # View Distance
 read -p "View Distance (chunks, default 10): " VIEW_DISTANCE
