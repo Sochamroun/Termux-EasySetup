@@ -146,7 +146,7 @@ python -m http.server 5000
 
 ---
 
-## Minecraft Paper Server Install 
+## Minecraft Paper Server Install ☕
 * Install For Termux App In Android Device 🤨
 ## Install Java JDK 17 and 21
 ## OpenJDK 17 ☕
@@ -158,15 +158,15 @@ yes | pkg install openjdk-17
 yes | pkg install openjdk-21
 ```
 ---
-## Downloaded Script Shell 
+## Downloaded Script Shell 🧾
 ```bash
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ```
-## How To Run script shell
+## How To Run script shell ⭐
 ```bash
 paper-server-setup.sh
 ```
-## Bot Join Server Setup
+## Bot Join Server Setup 🥱
 * Download script shell setup
 ```bash
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/bot-setup-free.sh && chmod +x bot-setup-free.sh
