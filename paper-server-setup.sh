@@ -6,8 +6,6 @@ echo " 📁 Minecraft Paper Server Install"
 echo " 🌐 Termux Script Auto Setup by Sochamrou🤓"
 echo "==============================================="
 
-curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
-
 sleep 5
 
 echo "Install required packages🍗"
