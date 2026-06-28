@@ -125,15 +125,18 @@ read -p "Level Seed (leave blank for random): " LEVEL_SEED
 # Hardcore
 echo ""
 echo "Hardcore Mode:"
-echo "1) false"
-echo "2) true"
+echo "1) false (Normal)"
+echo "2) true (Hardcore)"
 read -p "Choose (1-2): " HARDCORE_CHOICE
 
-if [ "$HARDCORE_CHOICE" = "1" ]; then
-    HARDCORE=true
-else
-    HARDCORE=false
-fi
+case "$HARDCORE_CHOICE" in
+    1) HARDCORE=false ;;
+    2) HARDCORE=true ;;
+    *)
+        echo "Invalid choice! Defaulting to false (Normal)"
+        HARDCORE=false
+        ;;
+esac
 
 # MOTD
 echo ""
@@ -205,3 +208,4 @@ sleep 2
 echo "true = Premium ✅"
 echo "false = Offline/Cracked 🤫" 
 echo "online-mode=$ONLINE_MODE"
+echo "hardcore=$HARDCORE"
