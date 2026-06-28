@@ -2,15 +2,15 @@
 
 clear
 echo "===================================="
-echo " 📁 Minecraft Paper Server Free"
-echo " 🌐 Termux Auto Setup by Roun"
+echo " 📁 Minecraft Paper Server Install"
+echo " 🌐 Termux Script Auto Setup by Sochamroun 🇰🇭"
 echo "===================================="
 
-sleep 2
+sleep 5
 
 echo "Install required packages"
 
-pkg install curl wget jq openjdk-21 -y
+yes | pkg install curl wget jq openjdk-21 -y
 
 echo ""
 echo "Enter server folder name:"
@@ -126,7 +126,7 @@ echo "1) false"
 echo "2) true"
 read -p "Choose (1-2): " HARDCORE_CHOICE
 
-if [ "$HARDCORE_CHOICE" = "2" ]; then
+if [ "$HARDCORE_CHOICE"Crack" ]; then
     HARDCORE=true
 else
     HARDCORE=false
@@ -188,5 +188,10 @@ echo "▶ Start server:"
 echo "bash ~/$SERVERNAME.sh"
 
 echo ""
-echo "🔓 Crack Server Enabled"
+echo "🔓 Server Enabled 🧐"
+
+sleep 3
+
+echo "true = Premium ✅"
+echo "false = Offline/Cracked 🤫" 
 echo "online-mode=$ONLINE_MODE"
