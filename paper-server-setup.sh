@@ -3,25 +3,25 @@
 clear
 echo "==============================================="
 echo " 📁 Minecraft Paper Server Install"
-echo " 🌐 Termux Script Auto Setup by Sochamroun"
+echo " 🌐 Termux Script Auto Setup by Sochamrou🤓"
 echo "==============================================="
 
 sleep 5
 
-echo "Install required packages"
+echo "Install required packages🍗"
 
 yes | pkg install curl iproute2 wget jq openjdk-21 -y
 
 echo ""
-echo "Enter server folder name:"
+echo "Enter server folder 📂 name:"
 read SERVERNAME
 
 mkdir -p ~/$SERVERNAME
 cd ~/$SERVERNAME || exit
 
 echo ""
-echo "Enter Minecraft version"
-echo "Example: 1.20.4 / 1.21.1"
+echo "Enter Minecraft version🥱"
+echo "Example: 1.20.4 / 1.21.1 "
 read VERSION
 
 echo ""
@@ -48,7 +48,7 @@ exit
 fi
 
 echo ""
-echo "Select RAM size"
+echo "Select RAM size ⚙️ "
 echo "1) 1GB"
 echo "2) 2GB"
 echo "3) 3GB"
@@ -80,11 +80,11 @@ EOF
 chmod +x start.sh
 
 echo ""
-echo "Running server first time..."
+echo "Running server first time... 📝"
 ./start.sh
 
 echo ""
-echo "Accepting EULA..."
+echo "Accepting EULA... 🗂️"
 if [ -f eula.txt ]; then
 sed -i 's/eula=false/eula=true/g' eula.txt
 fi
@@ -162,9 +162,6 @@ fi
 echo ""
 echo "✅ Settings saved!"
 
-echo "✅ MOTD set: $MOTD"
-echo "✅ online-mode=false applied"
-
 echo ""
 echo "Creating plugins folder..."
 mkdir -p plugins
@@ -203,10 +200,12 @@ echo "bash ~/$SERVERNAME.sh"
 echo ""
 echo "🔓 Server Enabled 🧐"
 
-sleep 2
+echo "Wait Check"
+sleep 5
 
 echo "true = Premium ✅"
 echo "false = Offline/Cracked 🤫" 
-echo " 🍎online-mode=$ONLINE_MODE"
-echo " 😠hardcore=$HARDCORE"
-echo " 😎Player=$MAX_PLAYERS"
+echo " 🍎 Online-mode=$ONLINE_MODE"
+echo " 😠 Hardcore=$HARDCORE"
+echo " 😎 Player=$MAX_PLAYERS"
+echo " 🌈 MOTD set: $MOTD"
