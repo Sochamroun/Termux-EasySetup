@@ -200,7 +200,7 @@ settings put global settings_enable_monitor_phantom_procs false
 ### Thanks for Using Termux Easy Setup
 
 [![Facebook](https://img.shields.io/badge/📍-Facebook-blue?style=for-the-badge)](https://www.facebook.com/share/18q25LzNnc/)
-[![telegram](https://img.shields.io/badge/🌐-Telegram-blue?style=for-the-badge)](t.me/Sochamroun123)
+[![telegram](https://img.shields.io/badge/🌐-Telegram-blue?style=for-the-badge)](https://t.me/Sochamroun123)
 
 ---
 <div align="center">
