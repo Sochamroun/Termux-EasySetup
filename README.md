@@ -21,6 +21,7 @@
 ## Quick Navigation / ការរុករករហ័ស
 
 [![📦 Installation](https://img.shields.io/badge/📦-Installation-blue?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup#installation)
+[![🎲 Minecraft-Paper](https://img.shields.io/badge/🎲Minecraft-Paper-yellow?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup#minecraft-paper-server-install-)
 ## 📱 The program must be installed (កម្មវិធីត្រូវដំឡើង)
 ## 🔗 Install Termux App and Termux x11
 * [👉Termux Official Webpage](https://github.com/termux/termux-app/releases)
