@@ -22,6 +22,7 @@
 
 [![📦 Installation](https://img.shields.io/badge/📦-Installation-blue?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup#installation)
 [![🎲 Minecraft-Paper](https://img.shields.io/badge/🎲Minecraft-Paper-yellow?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup#minecraft-paper-server-install-)
+[![✅ Termux x11](https://img.shields.io/badge/🤫-Termux_X11-red?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup/blob/main/README.md#%EF%B8%8F-big-installation--%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8A%E1%9F%86%E1%9E%A1%E1%9E%BE%E1%9E%84%E1%9E%92%E1%9F%86-requires-termuxx11)
 ## 📱 The program must be installed (កម្មវិធីត្រូវដំឡើង)
 ## 🔗 Install Termux App and Termux x11
 [![🤨 Termux](https://img.shields.io/badge/😎-Termux_Official-green?style=for-the-badge)](https://github.com/termux/termux-app/releases)
