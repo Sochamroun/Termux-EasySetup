@@ -20,7 +20,7 @@
 ---
 ## Quick Navigation / ការរុករករហ័ស
 
-* [Installation](##-Installation)
+* [Installation](##Installation)
 ## 📱 The program must be installed (កម្មវិធីត្រូវដំឡើង)
 ## 🔗 Install Termux App and Termux x11
 * [👉Termux Official Webpage](https://github.com/termux/termux-app/releases)
