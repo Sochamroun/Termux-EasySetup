@@ -2,14 +2,23 @@
 
 ### 📚 Quick Navigation
 
-- [🏠 Home](#-termux-easysetup)
-- [📦 Install](#-install)
-- [📱 Android Setup](#-android-setup)
-- [🎮 Minecraft Paper Server Install](#-minecraft-paper-server-install)
-- [📝 Usage](#-usage)
-- [❓ FAQ](#-faq)
-- [📄 License](#-license)
+<table>
+<tr>
+<td>
 
+## 📚 Quick Navigation
+
+- 🏠 <a href="#termux-easysetup">Home</a>
+- 📦 <a href="#install">Install</a>
+- 📱 <a href="#android-setup">Android Setup</a>
+- 🎮 <a href="#minecraft-paper-server-install">Minecraft Paper Server Install</a>
+- 📝 <a href="#usage">Usage</a>
+- ❓ <a href="#faq">FAQ</a>
+- 📄 <a href="#license">License</a>
+
+</td>
+</tr>
+</table>
 # 🚀 Termux EasySetup
 
 ...
