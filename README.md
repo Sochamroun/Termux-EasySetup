@@ -24,8 +24,8 @@
 [![🎲 Minecraft-Paper](https://img.shields.io/badge/🎲Minecraft-Paper-yellow?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup#minecraft-paper-server-install-)
 ## 📱 The program must be installed (កម្មវិធីត្រូវដំឡើង)
 ## 🔗 Install Termux App and Termux x11
-* [👉Termux Official Webpage](https://github.com/termux/termux-app/releases)
----
+[![🤨 Termux](https://img.shields.io/badge/😎-Termux_Official-green?style=for-the-badge)](https://github.com/termux/termux-app/releases)
+
 [![✅ Termux](https://img.shields.io/badge/🥱-Termux_Copy-blue?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup/releases/tag/App)
 ## 🔗 Install Material Files
 [💼 Play Store Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
