@@ -47,7 +47,8 @@
 - Android 8+
 - Latest Termux
 - Internet Connection
-  ---
+  
+---
 ## 📥 Installation
 * បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅ Run ៖
 
@@ -57,7 +58,7 @@
 ```bash
 termux-setup-storage
 ```
-## ⚡ Small Setup 😀
+## ⚡ Small installation / ការដំឡើងតូច 
 ```bash
 curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setup-small.sh | bash
 ```
@@ -67,7 +68,7 @@ curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setu
 * 😎 Package សំខាន់ៗ (python nodejs wget git....)
 * Install Size 1500Mb+
 ---
-## 🖥️ Big Setup (Requires Termux:X11)
+## 🖥️ Big installation / ការដំឡើងធំ (Requires Termux:X11)
 ```bash
 curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setup-big.sh | bash
 ```
@@ -79,16 +80,9 @@ curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setu
 * Install Linux System size 4072Mb+
 
 ---
-## 📦 Commands to use (command សម្រាប់ប្រើប្រាស់)
-- `video.sh` → Download videos 🎬  
-- `song.sh` → Download audio 🎵  
-- `ftp.sh` → Start FTP server 📡  
-- `win.sh` → Start XFCE desktop 🖥️
-- `ai.sh`  → Ai localhost
 
----
 ![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/dc83feb31cd9819bf425915577ad875d4b2f1300/linux.jpg)
-## 🎞️ Edit Video Quality
+## 🎞️ Edit Video Quality / កែសម្រួលគុណភាពវីដេអូ
 ```bash
 nano video.sh
 ````
@@ -97,7 +91,7 @@ nano video.sh
         --merge-output-format mp4 \
         -S "vcodec:h264,lang,quality,res,fps,hdr:12,acodec:aac" \
         -o "$DOWNLOAD_FOLDER/%(title)s.%(ext)s" \`
-## Video Quality
+## Video Quality / គុណភាពវីដេអូ
 * (height<=720) Change (ប្ដូរ)
 * 144
 * 240
@@ -107,17 +101,13 @@ nano video.sh
 * 1080 (Full HD)
 * 1440 (2K / QHD)
 * 2160 (4K / UHD)
+
 ---
-## Can not Download video Use Command 
-```bash
-yt-dlp -U
-```
-* Update `Yt-dlp` latest vision
-* Working Download video Again 😮
-# Coder (អ្នកសរសេរកូដ)
+
+## Coder / អ្នកសរសេរកូដ
 ## AstroNvim [Official Webpage](https://docs.astronvim.com/)
 * Setup AstroNvim For Termux Users 
-## Install 📦 Package
+## 📦 Install Package / ដំឡើងកញ្ចប់
 ```bash
 pkg install neovim nodejs-lts ripgrep -y
 ```
@@ -136,7 +126,7 @@ nvim
 - `rmdir` foldername delete folder
 ![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/7724afce2bd07f015cdeccfe754fb1f1c1a78e2a/Coder.jpg)
 ---
-## Live preview Webpage build
+## Live preview Webpage build / ការមើលជាមុនផ្ទាល់នៃការបង្កើតគេហទំព័រ
 - Use Python to Host 'index.html'
 ```bash
 python -m http.server 5000
