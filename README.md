@@ -52,7 +52,7 @@
 - Internet Connection
   
 ---
-## 📥 Installation
+## Installation
 * បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅ Run ៖
 
 ---
