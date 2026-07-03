@@ -1,27 +1,14 @@
 # 🚀 Termux EasySetup
 
-### 📚 Quick Navigation
-
-<table>
-<tr>
-<td>
-
-## 📚 Quick Navigation
-
-- 🏠 <a href="#termux-easysetup">Home</a>
-- 📦 <a href="#install">Install</a>
-- 📱 <a href="#android-setup">Android Setup</a>
-- 🎮 <a href="#minecraft-paper-server-install">Minecraft Paper Server Install</a>
-- 📝 <a href="#usage">Usage</a>
-- ❓ <a href="#faq">FAQ</a>
-- 📄 <a href="#license">License</a>
-
-</td>
-</tr>
-</table>
 # 🚀 Termux EasySetup
 
-...
+[![🏠 Home](https://img.shields.io/badge/🏠-Home-blue?style=for-the-badge)](#termux-easysetup)
+[![📦 Install](https://img.shields.io/badge/📦-Install-green?style=for-the-badge)](#install)
+[![📱 Android Setup](https://img.shields.io/badge/📱-Android%20Setup-yellow?style=for-the-badge)](#android-setup)
+[![🎮 Minecraft Paper](https://img.shields.io/badge/🎮-Minecraft%20Paper-orange?style=for-the-badge)](#minecraft-paper-server-install)
+[![📝 Usage](https://img.shields.io/badge/📝-Usage-purple?style=for-the-badge)](#usage)
+[![❓ FAQ](https://img.shields.io/badge/❓-FAQ-red?style=for-the-badge)](#faq)
+[![📄 License](https://img.shields.io/badge/📄-License-lightgrey?style=for-the-badge)](#license)
 
 # 📦 Install
 
