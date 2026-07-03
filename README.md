@@ -26,7 +26,7 @@
 ## 🔗 Install Termux App and Termux x11
 * [👉Termux Official Webpage](https://github.com/termux/termux-app/releases)
 ---
-* [👉 Download App Copyright apk](https://github.com/Sochamroun/Termux-EasySetup/releases/tag/App)
+[![✅ Termux](https://img.shields.io/badge/🥱-Termux-blue?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup/releases/tag/App)
 ## 🔗 Install Material Files
 [💼 Play Store Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
 
