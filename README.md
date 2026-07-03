@@ -1,9 +1,9 @@
-# សួស្តី សូមស្វាគមន៍មកកាន់ 
+# 👋 Hello, welcome / សួស្តី សូមស្វាគមន៍
 ## Termux tool Command Line 
 ![Banner](https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/main/Icon.png)
-# ✨ Termux Easy Setup and Easy Use
+# ✨ Termux Easy Setup and Easy Use / ងាយស្រួលដំឡើង និងងាយស្រួលប្រើប្រាស់
 
-### Free Tools for Android & Termux Users
+### Temrux Command Line For Android 
 
 ![Platform](https://img.shields.io/badge/Platform-Android-green)
 ![Shell](https://img.shields.io/badge/Shell-Termux-blue)
@@ -27,26 +27,33 @@
 [💼 Play Store Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
 
 ---
-## ✨ Features
-* 📦 Update & Install: Automatically installs essential packages (Python, Git, NodeJS,Yt-dlp etc.).
-* 🐚 Fish Shell: Sets up Fish shell with auto-suggestions for easier coding.
-* 🎬 Video Downloader: Download 720p videos from YouTube and other social media platforms.
-* 🎵 Audio Downloader: Automatically convert videos to MP3 (256k quality).
-* 📡 FTP Server: Create an FTP server for transferring files between phone and computer.
-## ✨ លក្ខណៈពិសេស
-* 📦 Update & Install៖ ដំឡើង Package សំខាន់ៗដោយស្វ័យប្រវត្តិ (Python, Git, NodeJS ជាដើម)។
-* 🐚 Fish Shell៖ កំណត់ Fish shell ដែលមាន auto-suggestion ងាយស្រួលសម្រាប់វាយកូដ។
-* 🎬 Video Downloader៖ ទាញយកវីដេអូកម្រិត 720p ពី YouTube និងបណ្ដាញសង្គមផ្សេងៗ។
-* 🎵 Audio Downloader៖ បំប្លែងវីដេអូទៅជា MP3 (256k) ដោយស្វ័យប្រវត្តិ។
-* 📡 FTP Server៖ បង្កើត FTP Server សម្រាប់ផ្ទេរ File រវាងទូរស័ព្ទ
+## ✨ Features / មុខងារ
+
+- 📦 Install required packages
+  - ដំឡើង Package ចាំបាច់
+
+- ⚡ Fast installation
+  - ដំណើរការលឿន
+
+- 🔄 Automatic update
+  - Update Package ដោយស្វ័យប្រវត្តិ
+
+- 🛠 Beginner Friendly
+  - ងាយស្រួលសម្រាប់អ្នកទើបចាប់ផ្តើម
 
 ---
-## 📥 របៀបដំឡើង (Installation) និង Update Vision package 
+## 📋 Requirements / តម្រូវការ
+
+- Android 8+
+- Latest Termux
+- Internet Connection
+  ---
+## 📥 Installation
 * បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅ Run ៖
 
 ---
-## ⚙️ Installation 
-## Allow Storage Access
+## ⚙️ Installation and Update / ការដំឡើង និងការអាប់ដេត
+## Allow Storage Access / អនុញ្ញាតឲ្យចូលប្រើប្រាស់កន្លែងផ្ទុក
 ```bash
 termux-setup-storage
 ```
