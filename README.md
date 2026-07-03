@@ -72,7 +72,7 @@
 ```bash
 termux-setup-storage
 ```
-## ⚡ Small installation / ការដំឡើងតូច 
+## ⚡ Installation Small package / ការដំឡើងកញ្ចប់តូច 
 ```bash
 curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setup-small.sh | bash
 ```
@@ -82,7 +82,7 @@ curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setu
 * 😎 Package សំខាន់ៗ (python nodejs wget git....)
 * Install Size 1500Mb+
 ---
-## 🖥️ Big installation / ការដំឡើងធំ (Requires Termux:X11)
+## 🖥️ Installation Big package / ការដំឡើងកញ្ចប់ធំ (Requires Termux:X11)
 ```bash
 curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/setup-big.sh | bash
 ```
