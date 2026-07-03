@@ -30,9 +30,8 @@
 
 [![✅ Termux](https://img.shields.io/badge/🥱-Termux_Copy-blue?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup/releases/tag/App)
 ## 🔗 Install Material Files
-[💼 Play Store Material Files](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
+[![Material Files](https://img.shields.io/badge/📁-Material_Files-blue?style=for-the-badge)](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
 
----
 ## ✨ Features / មុខងារ
 
 - 📦 Install required packages
