@@ -2,11 +2,7 @@
 ## Termux tool Command Line 
 ![Banner](https://raw.githubusercontent.com/Sochamroun/Termux-setup.github.io/main/Icon.png)
 # ✨ Termux Easy Setup and Easy Use / ងាយស្រួលដំឡើង និងងាយស្រួលប្រើប្រាស់
-<p align="center">
-  <a href="#minecraft-paper-server-install">
-    <img src="https://img.shields.io/badge/🚀-Minecraft%20Paper%20Install-orange?style=for-the-badge" alt="Minecraft Paper Install">
-  </a>
-</p>
+
 ### Temrux Command Line For Android 
 
 ![Platform](https://img.shields.io/badge/Platform-Android-green)
