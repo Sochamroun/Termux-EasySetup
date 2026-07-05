@@ -2,7 +2,7 @@
 
 clear
 echo "==============================================="
-echo " 📁 Minecraft Paper Server Install"
+echo " 📁 Minecraft vanilla Server Install"
 echo " 🌐 Termux Script Auto Setup by Sochamrou🤓"
 echo "==============================================="
 
