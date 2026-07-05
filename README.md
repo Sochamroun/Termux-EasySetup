@@ -26,6 +26,9 @@
 ## Minecraft Paper Server 
 [![🎲 Minecraft-Paper](https://img.shields.io/badge/🎲-Minecraft_Paper-yellow?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup#minecraft-paper-server-install-)
 
+## Minecraft vanilla Server
+[![🎲 Minecraft-Paper](https://img.shields.io/badge/🎲-Minecraft_Paper-orange?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup/tree/main#download-script-install-vanilla-server-)
+
 ## Termux X11 Desktop 
 [![✅ Termux x11](https://img.shields.io/badge/🤫-Termux_X11-red?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup/blob/main/README.md#%EF%B8%8F-big-installation--%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%8A%E1%9F%86%E1%9E%A1%E1%9E%BE%E1%9E%84%E1%9E%92%E1%9F%86-requires-termuxx11)
 
