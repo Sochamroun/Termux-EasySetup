@@ -20,32 +20,34 @@ mkdir -p ~/$SERVERNAME
 cd ~/$SERVERNAME || exit
 
 echo ""
-echo "Enter Minecraft version 🎲 "
-echo "Example: 1.20.4 / 1.21.1 "
+echo ""
+echo "Enter Minecraft version 🎲"
+echo "Example: 1.20.4 / 1.21.1"
 read VERSION
 
-echo ""
-echo "Getting latest Paper build..."
-
-BUILD=$(curl -s https://api.papermc.io/v2/projects/paper/versions/$VERSION | jq '.builds[-1]')
-
-if [ "$BUILD" = "null" ] || [ -z "$BUILD" ]; then
-echo "❌ Version not found!"
-exit
-fi
-
-echo "✅ Latest build: $BUILD"
-
-URL="https://api.papermc.io/v2/projects/paper/versions/$VERSION/builds/$BUILD/downloads/paper-$VERSION-$BUILD.jar"
+JSON_URL="https://gist.githubusercontent.com/osipxd/6119732e30059241c2192c4a8d2218d9/raw/paper-versions.json"
 
 echo ""
-echo "Downloading Paper server..."
-wget "$URL" -O server.jar
+echo "Getting download URL..."
 
-if [ ! -f server.jar ]; then
-echo "❌ Download failed!"
-exit
+URL=$(curl -fsSL "$JSON_URL" | jq -r ".versions[\"$VERSION\"]")
+
+if [ -z "$URL" ] || [ "$URL" = "null" ]; then
+    echo "❌ Version not found!"
+    exit 1
 fi
+
+echo "✅ Found: $VERSION"
+echo "⬇️ Downloading Paper..."
+
+wget -O server.jar "$URL"
+
+if [ $? -ne 0 ]; then
+    echo "❌ Download failed!"
+    exit 1
+fi
+
+echo "✅ Download complete!"
 
 echo ""
 echo "Select RAM size ⚙️ "
