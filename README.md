@@ -176,11 +176,18 @@ yes | pkg install openjdk-21
 ```bash
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ```
+
 ## Download Script Install vanilla Server ⚡
 ```bash
 curl -sLO https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/vanilla-server.sh && chmod +x vanilla-server.sh
 ```
-## How To Run script shell ⭐
+
+## Download Script Install Purpur Server 🤫
+```bash
+curl -sLO https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/purpur-server.sh && chmod +x purpur-server.sh
+```
+
+## How To Run script shell ⭐server
 ```bash
 paper-server-setup.sh
 ```
