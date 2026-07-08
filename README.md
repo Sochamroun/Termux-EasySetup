@@ -234,4 +234,6 @@ settings put global settings_enable_monitor_phantom_procs false
     <p><b>*Last updated: 2026*</b></p>
 </div>
 
+![Banner](https://github.com/Sochamroun/Termux-EasySetup/blob/main/IMG_20260708_172155_%F0%9F%8C%93%20SUPER%20NIGHT%20POWER%20BY%20RASIKUL.MP.jpg)
+
 
