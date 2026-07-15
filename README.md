@@ -73,8 +73,7 @@
 * បើកកម្មវិធី Termux រួចចម្លង Command ខាងក្រោមទៅ Run ៖
 ## Script Installation All in one 
 ```bash
-curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/install.sh && chmod +x install.sh && bash install.sh
-```
+curl -sL https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/install.sh && chmod +x install.sh 
 ---
 ## ⚙️ Installation and Update / ការដំឡើង និងការអាប់ដេត
 ## Allow Storage Access / អនុញ្ញាតឲ្យចូលប្រើប្រាស់កន្លែងផ្ទុក
