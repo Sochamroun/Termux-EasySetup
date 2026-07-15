@@ -29,7 +29,7 @@ const rl = readline.createInterface({
 });
 
 // Generate random username (8 characters)
-function randomUsername(length = 8) {
+function randomUsername(length = 12) {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let username = '';
 
