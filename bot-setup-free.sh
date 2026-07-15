@@ -22,11 +22,38 @@ npm install mineflayer
 cat > ~/mcbot/bot.js << 'EOF'
 const mineflayer = require('mineflayer');
 const readline = require('readline');
+const mineflayer = require('mineflayer');
+const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
+
+// Generate random username (8 characters)
+function randomUsername(length = 15) {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let username = '';
+
+    for (let i = 0; i < length; i++) {
+        username += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+
+    return username;
+}
+
+const usedNames = new Set();
+
+function getUniqueUsername() {
+    let username;
+
+    do {
+        username = randomUsername(8);
+    } while (usedNames.has(username));
+
+    usedNames.add(username);
+    return username;
+}
 
 rl.question('Minecraft Version: ', (version) => {
     rl.question('Server IP: ', (host) => {
@@ -61,7 +88,7 @@ rl.question('Minecraft Version: ', (version) => {
                         console.log(`[-] ${username} disconnected`);
 
                         setTimeout(() => {
-                            createBot(username);
+                            createBot(username); // reconnect using the same username
                         }, 5000);
                     });
 
@@ -70,8 +97,8 @@ rl.question('Minecraft Version: ', (version) => {
                     });
                 }
 
-                for (let i = 1; i <= count; i++) {
-                    createBot(`bot${i}`);
+                for (let i = 0; i < count; i++) {
+                    createBot(getUniqueUsername());
                 }
 
                 console.log('\nPress Ctrl+C to stop.\n');
