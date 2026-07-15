@@ -22,8 +22,6 @@ npm install mineflayer
 cat > ~/mcbot/bot.js << 'EOF'
 const mineflayer = require('mineflayer');
 const readline = require('readline');
-const mineflayer = require('mineflayer');
-const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -31,7 +29,7 @@ const rl = readline.createInterface({
 });
 
 // Generate random username (8 characters)
-function randomUsername(length = 15) {
+function randomUsername(length = 8) {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let username = '';
 
