@@ -47,6 +47,7 @@ while true; do
 		   curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/bot-setup-free.sh 
 		   chmod +x bot-setup-free.sh
 		   echo "Bot scrpit Join server MInecaft"
+		   ;;
         *)
             echo "Invalid choice! Please choose 1-5."
             ;;
