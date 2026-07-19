@@ -44,6 +44,7 @@
 [![🤨 Termux](https://img.shields.io/badge/😎-Termux_Official-green?style=for-the-badge)](https://github.com/termux/termux-app/releases)
 
 [![✅ Termux](https://img.shields.io/badge/🥱-Termux_Copy-blue?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup/releases/download/App/termux.apk)
+[![✅ Termux](https://img.shields.io/badge/💡-Termux_X11_Copy-blue?style=for-the-badge)](https://github.com/Sochamroun/Termux-EasySetup/releases/download/App/Termux.x11.apk)
 ## 🔗 Install Material Files
 [![Material Files](https://img.shields.io/badge/📁-Material_Files-blue?style=for-the-badge)](https://play.google.com/store/apps/details?id=me.zhanghai.android.files)
 
