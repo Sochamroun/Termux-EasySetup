@@ -28,87 +28,91 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-// Generate random username (8 characters)
-function randomUsername(length = 12) {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let username = '';
+// 100 Bot Names
+const botNames = [
+'AlexNova','SteveCraft','MinerKing','BuilderPro','PixelFox',
+'ShadowWolf','DarkNinja','BlueDragon','IronGolem','RedPanda',
+'EnderGhost','StormRider','FireBlade','IceHunter','SkyWalker',
+'NightFury','LavaKnight','StoneMiner','GoldenPick','DiamondBoy',
+'EmeraldKid','NetherHero','VoidWalker','BlockMaster','CraftLegend',
+'TreeCutter','OceanKing','MountainFox','CloudRunner','RiverWolf',
+'SilentArrow','CrazySteve','HappyMiner','FastBuilder','WildTiger',
+'SnowLeopard','JungleCat','ThunderBolt','ElectricFox','MagicSword',
+'CrystalSoul','PixelStorm','LuckyBlock','ZombieSlayer','SkeletonKing',
+'CreeperRun','SpiderHunter','GhastRider','BlazeMaster','WitherSoul',
+'DragonHeart','MoonLight','SunStrike','StarGazer','GalaxyFox',
+'CosmicWolf','NovaHunter','TitanCraft','PhantomSky','FrostByte',
+'InfernoKing','CyberKnight','QuantumBot','NeonShadow','AlphaWolf',
+'BetaMiner','GammaCraft','OmegaHero','TurboSteve','RapidFox',
+'SwiftArrow','EpicBuilder','RoyalKnight','MysticMage','ShadowStrike',
+'FrozenSoul','SolarFlame','LunarWolf','VenomBlade','SteelHeart',
+'RubyHunter','SapphireFox','TopazKnight','ObsidianMan','QuartzHero',
+'CopperKing','SilverArrow','GoldenWolf','DiamondSoul','EmeraldStar',
+'CrimsonFire','AzureSky','IvoryGhost','OnyxHunter','ScarletFox',
+'RoyalDragon','EchoRunner','StormShadow','PixelKnight','VoidMaster'
+];
 
-    for (let i = 0; i < length; i++) {
-        username += chars.charAt(Math.floor(Math.random() * chars.length));
-    }
+rl.question('Minecraft Version (Enter = Auto): ', (versionInput) => {
 
-    return username;
-}
-
-const usedNames = new Set();
-
-function getUniqueUsername() {
-    let username;
-
-    do {
-        username = randomUsername(8);
-    } while (usedNames.has(username));
-
-    usedNames.add(username);
-    return username;
-}
-
-rl.question('Minecraft Version: ', (version) => {
     rl.question('Server IP: ', (host) => {
+
         rl.question('Port (25565): ', (portInput) => {
-            rl.question('Bot Count (1-100): ', (countInput) => {
 
-                const port = parseInt(portInput) || 25565;
-                const count = parseInt(countInput);
+            rl.question('Bot Count (10-100): ', (countInput) => {
 
-                function createBot(username) {
-                    console.log(`[+] Connecting ${username}`);
+                const version = versionInput.trim() === '' ? false : versionInput.trim();
+                const port = portInput.trim() === '' ? 25565 : parseInt(portInput);
 
-                    const bot = mineflayer.createBot({
-                        host: host,
-                        port: port,
-                        username: username,
-                        version: version,
-                        auth: 'offline'
-                    });
+                let count = parseInt(countInput);
 
-                    bot.on('spawn', () => {
-                        console.log(`[✓] ${username} joined`);
+                if (isNaN(count) || count < 10) count = 10;
+                if (count > 100) count = 100;
 
-                        // Reconnect every 1 hour
-                        setTimeout(() => {
-                            console.log(`[↻] ${username} reconnecting...`);
-                            bot.quit();
-                        }, 60 * 60 * 1000);
-                    });
-
-                    bot.on('end', () => {
-                        console.log(`[-] ${username} disconnected`);
-
-                        setTimeout(() => {
-                            createBot(username); // reconnect using the same username
-                        }, 5000);
-                    });
-
-                    bot.on('error', (err) => {
-                        console.log(`[!] ${username}: ${err.message}`);
-                    });
-                }
+                console.log(`\nStarting ${count} bots...\n`);
 
                 for (let i = 0; i < count; i++) {
-                    createBot(getUniqueUsername());
+
+                    setTimeout(() => {
+
+                        const bot = mineflayer.createBot({
+                            host: host,
+                            port: port,
+                            username: botNames[i],
+                            version: version
+                        });
+
+                        bot.on('login', () => {
+                            console.log(`[+] ${bot.username} Joined`);
+                        });
+
+                        bot.on('spawn', () => {
+                            console.log(`[✓] ${bot.username} Spawned`);
+                        });
+
+                        bot.on('end', () => {
+                            console.log(`[-] ${bot.username} Disconnected`);
+                        });
+
+                        bot.on('kicked', (reason) => {
+                            console.log(`[Kick] ${bot.username}: ${reason}`);
+                        });
+
+                        bot.on('error', (err) => {
+                            console.log(`[Error] ${bot.username}: ${err.message}`);
+                        });
+
+                    }, i * 1000);
+
                 }
 
-                console.log('\nPress Ctrl+C to stop.\n');
                 rl.close();
-            });
-        });
-    });
-});
 
-process.on('SIGINT', () => {
-    console.log('\nStopping bots...');
-    process.exit(0);
+            });
+
+        });
+
+    });
+
 });
 EOF
 
