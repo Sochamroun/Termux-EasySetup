@@ -54,6 +54,7 @@ read -p "RAM (default 2024M = 2G) (note M=MB ; G=GB ): " RAM
 RAM=${RAM:-2024M}
 
 # TimeZone
+echo "Search TimeZoneDB"
 read -p "TIMEZONE (default=Asia/Phnom_Penh): " TIMEZONE
 TIMEZONE=${TIMEZONE:-Asia/Phnom_Penh}
 
