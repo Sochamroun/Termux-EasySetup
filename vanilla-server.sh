@@ -50,35 +50,29 @@ fi
 
 echo "✅ Vanilla Minecraft Server downloaded!"
 
-echo ""
-echo "Select RAM size ⚙️ "
-echo "1) 1GB"
-echo "2) 2GB"
-echo "3) 3GB"
-echo "4) 4GB"
-echo "5) 5GB"
-echo "6) 6GB"
+# Ram Server
+read -p "RAM (default 2024M = 2G) (note M=MB ; G=GB ): " RAM
+RAM=${RAM:-2024M}
 
-read RAMCHOICE
-
-case $RAMCHOICE in
-
-1) RAM="1G" ;;
-2) RAM="2G" ;;
-3) RAM="3G" ;;
-4) RAM="4G" ;;
-5) RAM="5G" ;;
-6) RAM="6G" ;;
-   *) RAM="2G" ;;
-   esac
+# TimeZone
+echo "Search TimeZoneDB"
+read -p "TIMEZONE (default=Asia/Phnom_Penh): " TIMEZONE
+TIMEZONE=${TIMEZONE:-Asia/Phnom_Penh}
 
 echo ""
 echo "Creating start.sh..."
 
 cat > start.sh <<EOF
 #!/data/data/com.termux/files/usr/bin/bash
+export TZ=$TIMEZONE
 java -Xms$RAM -Xmx$RAM -jar server.jar nogui
 EOF
+
+chmod +x start.sh
+
+echo "RAM=$RAM"
+echo "TIMEZONE=$TIMEZONE"
+sleep 2
 
 chmod +x start.sh
 
