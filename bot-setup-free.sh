@@ -24,92 +24,74 @@ const mineflayer = require('mineflayer');
 const readline = require('readline');
 
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+  input: process.stdin,
+  output: process.stdout
 });
 
-// Generate random username (8 characters)
-function randomUsername(length = 12) {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let username = '';
-
-    for (let i = 0; i < length; i++) {
-        username += chars.charAt(Math.floor(Math.random() * chars.length));
-    }
-
-    return username;
+function ask(question) {
+  return new Promise(resolve => rl.question(question, resolve));
 }
 
-const usedNames = new Set();
+let host;
+let port;
 
-function getUniqueUsername() {
-    let username;
+function createBot() {
+  console.log(`🚀 Connecting to ${host}:${port}...`);
 
-    do {
-        username = randomUsername(8);
-    } while (usedNames.has(username));
+  const bot = mineflayer.createBot({
+    host,
+    port,
+    username: 'ZinProMax-BotMc',
+    auth: 'offline'
+  });
 
-    usedNames.add(username);
-    return username;
+  bot.once('spawn', () => {
+    console.log('✅ ZinProMax-BotMc Joined Server!');
+  });
+
+  bot.on('error', (err) => {
+    console.log(`❌ Error: ${err.message}`);
+  });
+
+  bot.on('end', () => {
+    console.log('🔄 Disconnected! Reconnecting in 5 seconds...');
+
+    setTimeout(() => {
+      createBot();
+    }, 5000);
+  });
+
+  bot.on('kicked', () => {
+    console.log('⚠️ Kicked! Reconnecting in 5 seconds...');
+  });
 }
 
-rl.question('Minecraft Version: ', (version) => {
-    rl.question('Server IP: ', (host) => {
-        rl.question('Port (25565): ', (portInput) => {
-            rl.question('Bot Count (1-100): ', (countInput) => {
+async function main() {
+  console.log('====================================');
+  console.log('   ZinProMax-BotMc Minecraft Bot');
+  console.log('====================================');
 
-                const port = parseInt(portInput) || 25565;
-                const count = parseInt(countInput);
+  host = (await ask('🌐 Server IP: ')).trim();
 
-                function createBot(username) {
-                    console.log(`[+] Connecting ${username}`);
+  const portInput = (await ask('🔌 Server Port [25565]: ')).trim();
+  port = portInput === '' ? 25565 : parseInt(portInput, 10);
 
-                    const bot = mineflayer.createBot({
-                        host: host,
-                        port: port,
-                        username: username,
-                        version: version,
-                        auth: 'offline'
-                    });
+  rl.close();
 
-                    bot.on('spawn', () => {
-                        console.log(`[✓] ${username} joined`);
+  if (!host) {
+    console.log('❌ Server IP is required!');
+    return;
+  }
 
-                        // Reconnect every 1 hour
-                        setTimeout(() => {
-                            console.log(`[↻] ${username} reconnecting...`);
-                            bot.quit();
-                        }, 60 * 60 * 1000);
-                    });
+  if (isNaN(port) || port < 1 || port > 65535) {
+    console.log('❌ Invalid port!');
+    return;
+  }
 
-                    bot.on('end', () => {
-                        console.log(`[-] ${username} disconnected`);
+  createBot();
+}
 
-                        setTimeout(() => {
-                            createBot(username); // reconnect using the same username
-                        }, 5000);
-                    });
-
-                    bot.on('error', (err) => {
-                        console.log(`[!] ${username}: ${err.message}`);
-                    });
-                }
-
-                for (let i = 0; i < count; i++) {
-                    createBot(getUniqueUsername());
-                }
-
-                console.log('\nPress Ctrl+C to stop.\n');
-                rl.close();
-            });
-        });
-    });
-});
-
-process.on('SIGINT', () => {
-    console.log('\nStopping bots...');
-    process.exit(0);
-});
+main();
 EOF
 
 chmod +x ~/mcbot/bot.js
