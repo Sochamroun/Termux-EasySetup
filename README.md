@@ -183,7 +183,8 @@ yes | pkg install openjdk-21
 ```bash
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ```
-
+## Minecraft Seed Minecraft 1.21.11
+* 608548899648438462
 ## Download Script Install vanilla Server ⚡
 ```bash
 curl -sLO https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/vanilla-server.sh && chmod +x vanilla-server.sh
