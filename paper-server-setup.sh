@@ -53,7 +53,7 @@ echo "✅ Download complete!"
 read -p "RAM (default 2048M = 2G): " RAM
 RAM=${RAM:-2048M}
 
-# បើអ្នកវាយតែលេខ → បន្ថែម M
+# Auto M
 if [[ "$RAM" =~ ^[0-9]+$ ]]; then
     RAM="${RAM}M"
 fi
