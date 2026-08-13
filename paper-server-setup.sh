@@ -3,7 +3,7 @@
 clear
 echo "==============================================="
 echo " 📁 Minecraft Paper Server Install"
-echo " 🌐 Termux Script Auto Setup by Sochamrou🤓"
+echo " 🌐 Termux Script Auto Setup by Sochamroun🤓"
 echo "==============================================="
 
 sleep 5
@@ -49,9 +49,14 @@ fi
 
 echo "✅ Download complete!"
 
-# Ram Server
-read -p "RAM (default 2024M = 2G) (note M=MB ; G=GB ): " RAM
-RAM=${RAM:-2024M}
+# RAM Server
+read -p "RAM (default 2048M = 2G): " RAM
+RAM=${RAM:-2048M}
+
+# បើអ្នកវាយតែលេខ → បន្ថែម M
+if [[ "$RAM" =~ ^[0-9]+$ ]]; then
+    RAM="${RAM}M"
+fi
 
 # TimeZone
 echo "Search TimeZoneDB"
