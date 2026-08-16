@@ -139,7 +139,7 @@ esac
 
 # MOTD
 echo ""
-read -p "Enter MOTD: " MOTD
+read -p "Enter MOTD (ex: §aHello &eGuy: " MOTD
 
 echo ""
 echo "Writing server.properties..."
@@ -151,6 +151,7 @@ server-port=$SERVER_PORT
 max-players=$MAX_PLAYERS
 hardcore=$HARDCORE
 motd=$MOTD
+network-compression-threshold=64
 EOF
 
 # Add level-seed only if user entered one
