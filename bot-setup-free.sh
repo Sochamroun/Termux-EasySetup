@@ -34,11 +34,12 @@ function ask(question) {
 
 let host;
 let port;
+let bot;
 
 function createBot() {
   console.log(`🚀 Connecting to ${host}:${port}...`);
 
-  const bot = mineflayer.createBot({
+  bot = mineflayer.createBot({
     host,
     port,
     username: 'ZinProMax-BotMc',
@@ -46,7 +47,8 @@ function createBot() {
   });
 
   bot.once('spawn', () => {
-    console.log('✅ ZinProMax-BotMc Joined Server!');
+    console.log('✅ ZinProMax-Botmc Joined Server!');
+    console.log('💬 Type chat below:');
   });
 
   bot.on('error', (err) => {
@@ -61,14 +63,28 @@ function createBot() {
     }, 5000);
   });
 
-  bot.on('kicked', () => {
-    console.log('⚠️ Kicked! Reconnecting in 5 seconds...');
+  bot.on('kicked', (reason) => {
+    console.log(`⚠️ Kicked: ${reason}`);
   });
 }
 
+// Terminal input → Minecraft chat
+rl.on('line', (message) => {
+  message = message.trim();
+
+  if (!message) return;
+
+  if (bot && bot.player) {
+    bot.chat(message);
+    console.log(`💬 Bot: ${message}`);
+  } else {
+    console.log('⏳ Bot is not connected yet...');
+  }
+});
+
 async function main() {
   console.log('====================================');
-  console.log('   ZinProMax-BotMc Minecraft Bot');
+  console.log('   ZinProMax-Botmc Minecraft Bot');
   console.log('====================================');
 
   host = (await ask('🌐 Server IP: ')).trim();
@@ -76,15 +92,15 @@ async function main() {
   const portInput = (await ask('🔌 Server Port [25565]: ')).trim();
   port = portInput === '' ? 25565 : parseInt(portInput, 10);
 
-  rl.close();
-
   if (!host) {
     console.log('❌ Server IP is required!');
+    rl.close();
     return;
   }
 
   if (isNaN(port) || port < 1 || port > 65535) {
     console.log('❌ Invalid port!');
+    rl.close();
     return;
   }
 
@@ -103,10 +119,8 @@ cd ~/mcbot && node bot.js
 EOF
 
 chmod +x bot.sh
-clear
 
-echo "Run script Bor join server Minecraft☕ "
-echo "./bot.sh"
-echo "Or"
 echo "bash bot.sh"
-echo "Thank You Use my Shell Script"
+echo "cd mcbot"
+echo "node bot.js"
+echo -e "\033[93mThanks You \033[0m"
