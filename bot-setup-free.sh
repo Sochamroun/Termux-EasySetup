@@ -120,7 +120,9 @@ EOF
 
 chmod +x bot.sh
 
-echo "bash bot.sh"
-echo "cd mcbot"
-echo "node bot.js"
-echo -e "\033[93mThanks You \033[0m"
+clear 
+echo "Run : bash bot.sh"
+echo "" 
+echo "Run : cd mcbot && node bot.js"
+echo ""
+echo -e "\033[93mThanks You\033[0m"
