@@ -263,6 +263,8 @@ done
 EOF
 
 chmod +x ai.sh
+# paper server install
+curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ## hi
 echo ""
 echo "✅ Setup Complete!"
@@ -273,3 +275,4 @@ echo "song.sh    → Download audio 🎵"
 echo "ftp.sh     → Start FTP server 📡"
 echo "mv.sh      → Download video and song one time"
 echo "ai.sh      → Ai Run Local"
+echo "paper-server-setup.sh → PaperMc Server Install"
