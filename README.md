@@ -172,11 +172,15 @@ python -m http.server 5000
 ## Install Java JDK 17 and 21
 ## OpenJDK 17 ☕
 ```bash
-yes | pkg install openjdk-17
+yes | pkg install openjdk-17 -y 
 ```
 ## OpenJDK 21
 ```bash
-yes | pkg install openjdk-21
+yes | pkg install openjdk-21 -y
+```
+## OpenJDK 25
+```bash
+yes | pkg install openjdk-25 -y
 ```
 ---
 ## Downloaded Script Install Paper Server 🧾
@@ -185,6 +189,7 @@ curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/hea
 ```
 ## Minecraft Seed Minecraft 1.21.11
 * 608548899648438462
+* -4841024498097456415
 ## Download Script Install vanilla Server ⚡
 ```bash
 curl -sLO https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/vanilla-server.sh && chmod +x vanilla-server.sh
