@@ -187,6 +187,12 @@ yes | pkg install openjdk-25 -y
 ```bash
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ```
+## Script Download plugins FOR Paper 1.21.11
+* cd (folder file server)
+* Copy Command
+```bash
+wget -O plugins.zip "https://github.com/Sochamroun/Termux-EasySetup/releases/download/Plugins/plugins.zip" && unzip -ov plugins.zip && rm -f plugins.zip
+```
 ## Minecraft Seed Minecraft 1.21.11
 * 608548899648438462
 * -4841024498097456415
