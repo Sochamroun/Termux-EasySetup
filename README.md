@@ -191,7 +191,7 @@ curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/hea
 * cd (folder file server)
 * Copy Command
 ```bash
-wget -O plugins.zip "https://github.com/Sochamroun/Termux-EasySetup/releases/download/Plugins/plugins.zip" && unzip -ov plugins.zip && rm -f plugins.zip
+wget -O plugins.zip "https://github.com/Sochamroun/Termux-EasySetup/releases/download/Plugins/plugins.zip" && unzip -o plugins.zip && rm -f plugins.zip
 ```
 ## Minecraft Seed Minecraft 1.21.11
 * 608548899648438462
