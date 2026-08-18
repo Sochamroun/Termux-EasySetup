@@ -139,7 +139,7 @@ esac
 
 # MOTD
 echo ""
-read -p "Enter MOTD (ex: §aHello &eGuy: " MOTD
+read -p "Enter MOTD: " MOTD
 
 echo ""
 echo "Writing server.properties..."
