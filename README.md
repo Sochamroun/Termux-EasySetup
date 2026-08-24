@@ -187,15 +187,18 @@ yes | pkg install openjdk-25 -y
 ```bash
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ```
-## Script Download plugins FOR Paper 1.21.11
+## Script Download plugins Paper 1.21.11
 * cd (folder file server)
 * Copy Command
 ```bash
 wget -O plugins.zip "https://github.com/Sochamroun/Termux-EasySetup/releases/download/END/plugins.zip" && unzip -o plugins.zip && rm -f plugins.zip
 ```
+## Script Download plugins Bedrock join server java 
+```bash
+wget -O plugins.zip "https://github.com/Sochamroun/Termux-EasySetup/releases/download/Bedrock/plugins.zip" && unzip -o plugins.zip && rm -f plugins.zip
+```
 ## Minecraft Seed Minecraft 1.21.11
-* 608548899648438462
-* -4841024498097456415
+
 ## Download Script Install vanilla Server ⚡
 ```bash
 curl -sLO https://github.com/Sochamroun/Termux-EasySetup/raw/refs/heads/main/vanilla-server.sh && chmod +x vanilla-server.sh
