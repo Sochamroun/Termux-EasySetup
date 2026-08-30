@@ -193,6 +193,10 @@ curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/hea
 ```bash
 wget -O plugins.zip "https://github.com/Sochamroun/Termux-EasySetup/releases/download/END/plugins.zip" && unzip -o plugins.zip && rm -f plugins.zip
 ```
+## Minecraft server 🌿 Laef 1.21.11
+```bash
+wget -O server.zip "https://github.com/Sochamroun/Termux-EasySetup/releases/download/Laef-1.21.11/leaf.1.21.11+.Plugins.zip" && unzip -o server.zip && rm -f server.zip && chmod +x start.sh
+```
 ## Script Download plugins Bedrock join server java 
 ```bash
 wget -O plugins.zip "https://github.com/Sochamroun/Termux-EasySetup/releases/download/Bedrock/plugins.zip" && unzip -o plugins.zip && rm -f plugins.zip
