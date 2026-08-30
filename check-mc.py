@@ -60,21 +60,3 @@ except Exception as e:
     print(f"Server Address : {server_address}")
     print(f"Error: {e}")
     print("==================================")
-    EOF
-
-# paper server install
-curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
-## bot 
-curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/bot-setup-free.sh && chmod +x bot-setup-free.sh
-## hi
-echo ""
-echo "✅ Setup Complete!"
-echo "--------------------------------"
-echo "Commands (use this to run script files)"
-echo "video.sh   → Download videos 🎬"
-echo "song.sh    → Download audio 🎵"
-echo "ftp.sh     → Start FTP server 📡"
-echo "mv.sh      → Download video and song one time"
-echo "ai.sh      → Ai Run Local"
-echo "paper-server-setup.sh → PaperMc Server Install"
-echo "bot-setup-free.sh → Install Bot Mc use Node JavaScript"
