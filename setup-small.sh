@@ -264,7 +264,8 @@ done
 EOF
 
 chmod +x ai.sh
-
+##minecraft server check online use python 
+curl -sL0 https://github.com/Sochamroun/Termux-EasySetup/blob/main/check-mc.py
 # paper server install
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ## bot 
@@ -281,3 +282,4 @@ echo "mv.sh      → Download video and song one time"
 echo "ai.sh      → Ai Run Local"
 echo "paper-server-setup.sh → PaperMc Server Install"
 echo "bot-setup-free.sh → Install Bot Mc use Node JavaScript"
+echo "check-mc.py Run → python check-mc.py"
