@@ -265,7 +265,7 @@ EOF
 
 chmod +x ai.sh
 ##minecraft server check online use python 
-curl -sLO https://github.com/Sochamroun/Termux-EasySetup/blob/1e17086aef7300007c00091ade7a078a0a1252e1/check-mc.py
+curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/check-mc.py
 # paper server install
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ## bot 
