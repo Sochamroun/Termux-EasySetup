@@ -329,8 +329,8 @@ except Exception as e:
     print(f"Server Address : {server_address}")
     print(f"Error: {e}")
     print("==================================")
-EOF    
-    
+    EOF
+
 # paper server install
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ## bot 
