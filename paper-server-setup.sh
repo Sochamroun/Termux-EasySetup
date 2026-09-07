@@ -151,7 +151,7 @@ server-port=$SERVER_PORT
 max-players=$MAX_PLAYERS
 hardcore=$HARDCORE
 motd=$MOTD
-network-compression-threshold=256
+network-compression-threshold=128
 sync-chunk-writes=false
 pause-when-empty-seconds=60
 EOF
