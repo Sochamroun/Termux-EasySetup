@@ -151,9 +151,9 @@ server-port=$SERVER_PORT
 max-players=$MAX_PLAYERS
 hardcore=$HARDCORE
 motd=$MOTD
-network-compression-threshold=512
+network-compression-threshold=256
 sync-chunk-writes=false
-pause-when-empty-seconds=120
+pause-when-empty-seconds=-30
 EOF
 
 # Add level-seed only if user entered one
