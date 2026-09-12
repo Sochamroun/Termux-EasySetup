@@ -271,7 +271,6 @@ curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/hea
 # paper server install
 curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/paper-server-setup.sh && chmod +x paper-server-setup.sh
 ## bot 
-curl -sLO https://raw.githubusercontent.com/Sochamroun/Termux-EasySetup/refs/heads/main/bot-setup-free.sh && chmod +x bot-setup-free.sh
 ## hi
 echo ""
 echo "✅ Setup Complete!"
@@ -283,5 +282,4 @@ echo "ftp.sh     → Start FTP server 📡"
 echo "mv.sh      → Download video and song one time"
 echo "ai.sh      → Ai Run Local"
 echo "paper-server-setup.sh → PaperMc Server Install"
-echo "bot-setup-free.sh → Install Bot Mc use Node JavaScript"
 echo "check-mc.py Run → python check-mc.py"
